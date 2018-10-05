@@ -23,12 +23,11 @@ Louchart et al. explain that in most computer games, attempts at complex, dynami
 
 In short, with a greater amount of gameplay content comes infeasible exponential growth in the number of branches of a narrative tree structure. Developers are then forced to simplify the story, resulting in less (or no) player interactivity. This reduces player agency, and prevents the player from being immersed in a believable game-world and violates no. 3 of Riedl's criteria for an ISS [2].
 
+#### Emergent Narrative
 
 #### The Narrative Paradox
 
 It is common for narrative design in computer games to follow the Aristotelian plot-based approach, meaning that complete control over every aspect of the story is required by the author, leaving little room for interaction by the player. Louchart and Aylett recognised that the "authoring of interactive narrative presents the paradox that ... the author requires control over the unfolding narrative whilst ... the user expects freedom over their decisions." [3][4]. These two goals clearly conflict. The greater the level of interactivity provided to the player, the less control the author has over the story's events. Equally, the more control the author has over the story, the less room there is for the player to interact with characters and change the course of the narrative. This concept has been dubbed the "Narrative Paradox" [5]. Louchart and Aylett suggest that a solution to this paradox should divert from the branching plot-based approaches implemented in current computer games, hence also solving the exponential growth problem.
-
-
 
 
 ## Bibliography
