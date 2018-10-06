@@ -20,7 +20,7 @@ Riedl identifies 3 criterion for interactive storytelling systems [2]:
     - leaves the experience feeling like they have been told a story
 3. The story changes as a result of a user's actions.
 
-#### Problems with the Intergration of Interactivity into Game Narratives:
+#### Problems with the Integration of Interactivity into Game Narratives:
 
 Louchart et al. explain that in most computer games, attempts at complex, dynamic storylines are usually "confined to simple branching tree structures" [3]. Furthermore, as the scope of games increases and development effort is focused on assets such as textures, 3D-modelling and other gameplay content, a greater number of narrative possibilites arise. Yet the "static nature of these [tree] structures affects the range of options covered [and] reduces the framework for player interaction", an integral part of interactive storytelling. Louchart et al. go on to argue that "the integration of interactivity into game narratives requires a rethinking of the design process" because these tree-like structures either expand exponentially with the inclusion of more narrative elements (such as additional characters added to the game), or have to remain so simple and rigid that the player's immersion in the game world is threatened.
 
