@@ -7,6 +7,11 @@
 
 ## Background and Motivation
 
+**TODO:**
+- **Write Motivation**
+- **Describe more related work/background**
+- **Gives example of commerically-successful narrative-focused games**
+
 #### Defining Interactive Storytelling:
 
 Interactive storytelling is a unique form of narrative design seen in digital entertainment mediums where no pre-determined storyline exists. Instead, the user is able to change the story and influence the characters themselves. Bostan and Marsh define interactive  storytelling as an approach to computer game narrative design where "real-time feedback collected from the players is used by the game engine to continuously modify the content as it is being delivered." [1]. The key aspect of interactive storytelling is that the player is an active participant and their in-game actions have a direct effect on the narrative that is told. This differs from traditional computer game narratives which typically consist of an unchanging linear story with a pre-defined outcome.
@@ -37,11 +42,18 @@ which the story will emerge." [7]. In this way, ENs work as a sort of 'sandbox';
 
 ## Aims and Objectives
 
+**TODO:**
+- **Write objectives**
+
 The aim for this project is to research the field of interactive storytelling, and explore ways of answering the open research question of the "narrative paradox", focusing on a simulation-based approach which exploits the usefulness of emergent narratives.
 
 The desired end-result would consist of 2 parts:
 1. An externally published research manuscript describing the field of research and critically analysing different approaches to the narrative paradox. The paper should compare and contrast existing works in the field and explain, in detail, the approach used to produce interactive narratives implemented in part 2.
 2. A working prototype interactive storytelling system, taking the form of a simulation-based computer game written in Unity.
+
+## External Aspect
+
+Presenting an interesting narrative to the player has always been a focus of video games. However, successful approaches to narrative design outside of linear/branching structures is very rarely seen in commerically successful AAA games. By conducting research into the field of interactive storytelling and exploiting the advantages of emergent narratives, the author hopes to publish a research manuscript of his findings (to be presented at the GAMER Research Collaboration Event at De Montfort University, 2019 ), and produce a playable prototype computer game which exhibits a novel approach to interactive storytelling.
 
 ## Bibliography
 
