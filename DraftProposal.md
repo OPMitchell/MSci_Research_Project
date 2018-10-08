@@ -32,14 +32,15 @@ It is common for narrative design in computer games to follow the Aristotelian p
 
 #### Emergent Narrative:
 
-Emergent Narrative.
+Emergent Narrative (EN) is an approach to designing interactive narratives where, instead of a fixed, authored plot, the "narrative weight of the application is shared by authors and players." [3][5][6]. This is typically achieved through simulating a virtual world, including virtual characters with different behaviours created by the author. The storyline then "emerges" at run-time from the interactions between these autonomous agents, and the player [2]. The advantage of an EN approach is that the narrative is non-linear and allows for a greater level of player interactivity. Despite this, ENs are unpredictable at authoring time. Kriegel and Aylett explain how authors are forced to "let go of specific story lines altogether and ... focus on creating the elements from
+which the story will emerge." [7]. In this way, ENs work as a sort of 'sandbox'; the author defines the limits of the story world and creates the characters and behaviours that fill it, then sits back and watches whatever story is created by the simulation.
 
 ## Aims and Objectives
 
 The aim for this project is to research the field of interactive storytelling, and explore ways of answering the open research question of the "narrative paradox", focusing on a simulation-based approach which exploits the usefulness of emergent narratives.
 
 The desired end-result would consist of 2 parts:
-1. An externally published research manuscript describing the field of research and critically analysing different approaches to the narrative paradox. The paper should compare and contrast existing works in the field and explain the approach used to produce interactive narratives implemented in part 2.
+1. An externally published research manuscript describing the field of research and critically analysing different approaches to the narrative paradox. The paper should compare and contrast existing works in the field and explain, in detail, the approach used to produce interactive narratives implemented in part 2.
 2. A working prototype interactive storytelling system, taking the form of a simulation-based computer game written in Unity.
 
 ## Bibliography
@@ -51,3 +52,5 @@ The desired end-result would consist of 2 parts:
 | 3  | Louchart S., Aylett R., Kriegel M., Dias J., Figueiredo R., Paiva A. (2008), "Authoring Emergent Narrative-Based Games", *Journal of Game Development*, **3**(1), pp. 19–37 |
 | 4  | Louchart S., Aylett R. (2003), "Solving the Narrative Paradox in VEs - Lessons from RPGs", *In: Rist T., Aylett R.S., Ballin D., Rickel J. (eds) Intelligent Virtual Agents. IVA 2003. Lecture Notes in Computer Science, Vol. 2792.*, pp. 244-248 |
 | 5  | Aylett R. (2000), "Emergent Narrative, Social Immersion and "Storification"", *Proceedings Narrative and Learning Environments Conference*, Edinburgh, Scotland  |
+| 6   | Aylett R. (1999), "Narrative in Virtual Environment - Towards Emergent Narrative", *In: Proceedings of the AAAI Fall Symposium on Narrative Intelligence, 1999*  |
+| 7  | Kriegel M., Aylett R. (2008), "Emergent Narrative As A Novel Framework For Massively Collaborative Authoring", * In: Prendinger H., Lester J., Ishizuka M. (eds) Intelligent Virtual Agents. IVA 2008. Lecture Notes in Computer Science, vol 5208.* |
