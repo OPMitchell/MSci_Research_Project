@@ -35,8 +35,10 @@ It is common for narrative design in computer games to follow the Aristotelian p
 Aylett proposed Emergent Narrative (EN) as an alternative. EN is an approach to designing interactive narratives where, instead of a fixed, authored plot, the "narrative weight of the application is shared by authors and players." [3][5][6]. This is typically achieved through simulating a virtual world, including virtual characters with different behaviours created by the author. The storyline then "emerges" at run-time from the interactions between these autonomous agents, and the player [2]. The advantage of an EN approach is that the narrative is non-linear and allows for a greater level of player interactivity. Despite this, ENs are unpredictable at authoring time. Kriegel and Aylett explain how authors are forced to "let go of specific story lines altogether and ... focus on creating the elements from
 which the story will emerge." [7]. In this way, ENs work as a sort of 'sandbox'; the author defines the limits of the story world and creates the characters and behaviours that fill it, then sits back and watches whatever story is created by the simulation.
 
-ENs benefit from having no rigid structure to their story; there is no branching tree structure to restrict the range of potential storylines. This solves the problem of infeasible exponential growth, but the narrative paradox remains. In fact, emergent narratives are the polar opposite of the plot-based approach:
-Where plot-based approaches require high levels of authorship and direction, restricting player interactivity, emergent narratives implicitly prevent the author from giving any direction at all, making them highly unpredictable.
+ENs benefit from having no rigid structure to their story; there is no branching tree structure to restrict the range of potential storylines. This solves the problem of infeasible exponential growth and allows for a potentially limitless amount of possible storylines (should the simulation be complex enough). However, the narrative paradox remains. In fact, emergent narratives are the polar opposite of the plot-based approach;
+where plot-based approaches require high levels of authorship and direction, restricting player interactivity, emergent narratives implicitly prevent the author from giving any direction at all, making them highly unpredictable.
+
+Yet another disadvantage of emergent narrative approaches is their reliance on well implemented virtual agents and their control logic. If the AI controlling each agent is too simple then the story is unlikely to be very compelling or complex enough to satisfy the player. Similarly, if the AI has too limited a set of possible responses to stimuli in its environment then the player may see the same storylines again and again, threatening their immersion in the game.
 
 #### Motivation
 
@@ -56,6 +58,23 @@ Key Objectives:
 ## External Aspect
 
 Presenting an interesting narrative to the player has always been a focus of video games. However, successful approaches to narrative design outside of linear/branching structures is very rarely seen in commerically successful AAA games. By conducting research into the field of interactive storytelling and exploiting the advantages of emergent narratives, the author hopes to publish a research manuscript of his findings (to be presented at the GAMER Research Collaboration Event at De Montfort University, 2019 ), and produce a playable prototype computer game which exhibits a novel approach to interactive storytelling.
+
+## Work Plan:
+The Gantt chart below shows the proposed division of tasks for every week until the project deadline. Frequently, time for code maintenance and refactoring has been included to ensure that the software quality is of the highest professional standard.
+Time for the prioritisation of other academic work has also been allowed.
+
+| Task ID | Task Description |
+|---------|------------------|
+| A | Write Proposal |
+| B | Research and evaluate existing games that are products of IS research (e.g. Façade) |
+| C | Research and evaluate the success of existing IS methods, particularly EN methods |
+| D  | Research ways of creating believable and effective AI agents |
+| E | Implement a simple framework for the prototype system in Unity which which different IS methods can be easily tested |
+| F | Use the prototype system to test various existing IS methods and identify pros and cons of each  |
+| G | Develop a novel hybrid approach to IS by combining parts of the successful, tested approaches |
+| H | Test the novel IS method by implementing it in the prototype system |
+| I | Conduct user testing with the finished prototype system |
+| J | Analyse the results of the user tests and come to a conclusion regarding the success of the system and the project as a whole  |
 
 ## Bibliography
 
