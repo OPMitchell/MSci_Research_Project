@@ -65,7 +65,9 @@ Time for the prioritisation of other academic work has also been allowed.
 
 | Task ID | Task Description |
 |---------|------------------|
-| A | Write Proposal |
+| A | Write proposal |
+| B | Write interim report |
+| C | Write final submission / research manuscript |
 | B | Research and evaluate existing games that are products of IS research (e.g. Façade) |
 | C | Research and evaluate the success of existing IS methods, particularly EN methods |
 | D  | Research ways of creating believable and effective AI agents |
