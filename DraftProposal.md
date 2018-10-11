@@ -7,11 +7,6 @@
 
 ## Background and Motivation
 
-**TODO:**
-- **Write Motivation**
-- **Describe more related work/background**
-- **Gives example of commerically-successful narrative-focused games**
-
 #### Defining Interactive Storytelling:
 
 Interactive storytelling is a unique form of narrative design seen in digital entertainment mediums where no pre-determined storyline exists. Instead, the user is able to change the story and influence the characters themselves. Bostan and Marsh define interactive  storytelling as an approach to computer game narrative design where "real-time feedback collected from the players is used by the game engine to continuously modify the content as it is being delivered." [1]. The key aspect of interactive storytelling is that the player is an active participant and their in-game actions have a direct effect on the narrative that is told. This differs from traditional computer game narratives which typically consist of an unchanging linear story with a pre-defined outcome.
@@ -37,19 +32,26 @@ It is common for narrative design in computer games to follow the Aristotelian p
 
 #### Emergent Narrative:
 
-Emergent Narrative (EN) is an approach to designing interactive narratives where, instead of a fixed, authored plot, the "narrative weight of the application is shared by authors and players." [3][5][6]. This is typically achieved through simulating a virtual world, including virtual characters with different behaviours created by the author. The storyline then "emerges" at run-time from the interactions between these autonomous agents, and the player [2]. The advantage of an EN approach is that the narrative is non-linear and allows for a greater level of player interactivity. Despite this, ENs are unpredictable at authoring time. Kriegel and Aylett explain how authors are forced to "let go of specific story lines altogether and ... focus on creating the elements from
+Aylett proposed Emergent Narrative (EN) as an alternative. EN is an approach to designing interactive narratives where, instead of a fixed, authored plot, the "narrative weight of the application is shared by authors and players." [3][5][6]. This is typically achieved through simulating a virtual world, including virtual characters with different behaviours created by the author. The storyline then "emerges" at run-time from the interactions between these autonomous agents, and the player [2]. The advantage of an EN approach is that the narrative is non-linear and allows for a greater level of player interactivity. Despite this, ENs are unpredictable at authoring time. Kriegel and Aylett explain how authors are forced to "let go of specific story lines altogether and ... focus on creating the elements from
 which the story will emerge." [7]. In this way, ENs work as a sort of 'sandbox'; the author defines the limits of the story world and creates the characters and behaviours that fill it, then sits back and watches whatever story is created by the simulation.
+
+ENs benefit from having no rigid structure to their story; there is no branching tree structure to restrict the range of potential storylines. This solves the problem of infeasible exponential growth, but the narrative paradox remains. In fact, emergent narratives are the polar opposite of the plot-based approach:
+Where plot-based approaches require high levels of authorship and direction, restricting player interactivity, emergent narratives implicitly prevent the author from giving any direction at all, making them highly unpredictable.
+
+#### Motivation
+
+The motivation for this research project is to evaluate the effectiveness of pre-existing methods and develop a novel approach to interactive storytelling that comes closer to mitigating the problems of the narrative paradox. Part of the project includes the implemention of a prototype IS system, intended to generate compelling narratives that are truly interactive and give players a real sense of agency.
 
 ## Aims and Objectives
 
-**TODO:**
-- **Write objectives**
+The aim for this project is to research the field of interactive storytelling, and explore ways of answering the open research question of the "narrative paradox", focusing on a simulation-based approach which exploits the usefulness of emergent narratives. The desired end result would include an externally published research manuscript, and a prototype interactive storytelling system.
 
-The aim for this project is to research the field of interactive storytelling, and explore ways of answering the open research question of the "narrative paradox", focusing on a simulation-based approach which exploits the usefulness of emergent narratives.
-
-The desired end-result would consist of 2 parts:
-1. An externally published research manuscript describing the field of research and critically analysing different approaches to the narrative paradox. The paper should compare and contrast existing works in the field and explain, in detail, the approach used to produce interactive narratives implemented in part 2.
-2. A working prototype interactive storytelling system, taking the form of a simulation-based computer game written in Unity.
+Key Objectives:
+1. Identify and evaluate the effectiveness of pre-existing techniques for the generation of interactive narratives in computer games.
+2. Document a novel approach to interactive storytelling based on the combination of multiple, successful pre-existing techniques that exploit the pros of emergent narratives.
+3. Create a working prototype interactive storytelling system (based on the results of objective 2), taking the form of a simulation-based computer game written in Unity.
+4. Evaluate the effectiveness of the prototype by studying human participants using it and acquiring their thoughts and opinions.
+5. Analyse the gathered data and conclude how successful the new system is.
 
 ## External Aspect
 
