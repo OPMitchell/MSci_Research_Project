@@ -68,15 +68,15 @@ Time for the prioritisation of other academic work has also been allowed.
 | A | Write proposal |
 | B | Write interim report |
 | C | Write final submission / research manuscript |
-| B | Research and evaluate existing games that are products of IS research (e.g. Façade) |
-| C | Research and evaluate the success of existing IS methods, particularly EN methods |
-| D  | Research ways of creating believable and effective AI agents |
-| E | Implement a simple framework for the prototype system in Unity which which different IS methods can be easily tested |
-| F | Use the prototype system to test various existing IS methods and identify pros and cons of each  |
-| G | Develop a novel hybrid approach to IS by combining parts of the successful, tested approaches |
-| H | Test the novel IS method by implementing it in the prototype system |
-| I | Conduct user testing with the finished prototype system |
-| J | Analyse the results of the user tests and come to a conclusion regarding the success of the system and the project as a whole  |
+| D | Research and evaluate existing games that are products of IS research (e.g. Façade) |
+| E | Research and evaluate the success of existing IS methods, particularly EN methods |
+| F | Research ways of creating believable and effective AI agents |
+| G | Implement a simple framework for the prototype system in Unity which which different IS methods can be easily tested |
+| H | Use the prototype system to test various existing IS methods and identify pros and cons of each  |
+| I | Develop a novel hybrid approach to IS by combining parts of the successful, tested approaches |
+| J | Test the novel IS method by implementing it in the prototype system |
+| K | Conduct user testing with the finished prototype system |
+| L | Analyse the results of the user tests and come to a conclusion regarding the success of the system and the project as a whole  |
 
 ## Bibliography
 
