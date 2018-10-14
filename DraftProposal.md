@@ -77,7 +77,7 @@ The Gantt chart below shows the proposed division of tasks for every week until 
 | K | Conduct user testing with the finished prototype system |
 | L | Analyse the results of the user tests and come to a conclusion regarding the success of the system and the project as a whole  |
 
-[Imgur](https://i.imgur.com/j7L7IPB.png)
+![Imgur](https://i.imgur.com/j7L7IPB.png)
 
 ## Bibliography
 
