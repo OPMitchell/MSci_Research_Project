@@ -60,8 +60,7 @@ Key Objectives:
 Presenting an interesting narrative to the player has always been a focus of video games. However, successful approaches to narrative design outside of linear/branching structures is very rarely seen in commerically successful AAA games. By conducting research into the field of interactive storytelling and exploiting the advantages of emergent narratives, the author hopes to publish a research manuscript of his findings (to be presented at the GAMER Research Collaboration Event at De Montfort University, 2019 ), and produce a playable prototype computer game which exhibits a novel approach to interactive storytelling.
 
 ## Work Plan:
-The Gantt chart below shows the proposed division of tasks for every week until the project deadline. Frequently, time for code maintenance and refactoring has been included to ensure that the software quality is of the highest professional standard.
-Time for the prioritisation of other academic work has also been allowed.
+The Gantt chart below shows the proposed division of tasks for every week until the project deadline:
 
 | Task ID | Task Description |
 |---------|------------------|
@@ -77,6 +76,8 @@ Time for the prioritisation of other academic work has also been allowed.
 | J | Test the novel IS method by implementing it in the prototype system |
 | K | Conduct user testing with the finished prototype system |
 | L | Analyse the results of the user tests and come to a conclusion regarding the success of the system and the project as a whole  |
+
+[Imgur](https://i.imgur.com/j7L7IPB.png)
 
 ## Bibliography
 
