@@ -1,6 +1,6 @@
 <center>
   <h1> Project Proposal </h1>
-  <h3> A System for Emergent, Simulation-based, Interactive Narrative Generation </h3>
+  <h3> A System for Simulation-based, Emergent Interactive Narrative Generation </h3>
   <h5> Oliver Mitchell </h5>
   <p> psyom1@nottingham.ac.uk / 4246437 </p>
 </center>
