@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{titling}
+
+\setlength{\droptitle}{-5em}   % This is your set screw
+\usepackage[margin=3.0cm]{geometry}
+ 
+\title{A System for Simulation-based, Emergent Interactive Narrative Generation}
+\author{
+  Oliver Mitchell\\
+  \texttt{psyom1@nottingham.ac.uk}\\\\
+  \textnormal{School of Computer Science}\\
+  \textnormal{University of Nottingham}
+}
+\date{October 25th, 2018}
+ 
+\begin{document}
+
+\maketitle
+ 
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Most modern computer games fail to provide a dynamic and changing narrative to their players. Instead, they confine storylines to simple branching tree structures which grow exponentially with additional game content, and leave little room for player interaction. Research in the field of interactive storytelling (IS) has focused on the advantages of "emergent narratives" (ENs). With this approach, the storyline "emerges" at run-time from the interactions between author-programmed autonomous agents and the player. The benefit is a non-linear narrative, allowing for greater player interactivity. However, ENs are unpredictable at authoring time, removing the author's control over the story's events.\\
+
+\noindent The struggle to balance an author's control over a game's narrative whilst simulatenously allowing high levels of player influence and interactivity to affect the story's direction has been dubbed the "Narrative Paradox" [5]. This paper explores existing interactive storytelling methods and proposes a novel approach to IS which aims to partially mitigate the issues of the narrative paradox.
+
+\section{Background}
+
+\subsection{Defining Interactive Storytelling}
+
+Interactive storytelling is a unique form of narrative design seen in digital entertainment mediums where no pre-determined storyline exists. Instead, the user can change the story and influence the characters themselves. Bostan and Marsh define interactive storytelling as an approach to computer game narrative design where "real-time feedback collected from the players is used by the game engine to continuously modify the content as it is being delivered." [1]. The key aspect of interactive storytelling is that the player is an active participant and their in-game actions have a direct effect on the narrative that is told. This differs from traditional computer game narratives which typically consist of an unchanging linear story with a pre-defined outcome.
+
+\subsection{Problems with the Integration of Interactivity into Game Narratives}
+
+Louchart et al. explain that in most computer games, attempts at complex, dynamic storylines are usually "confined to simple branching tree structures" [3]. Furthermore, as the scope of games increases and development effort is focused on assets such as textures, 3D-modelling and other gameplay content, a greater number of narrative possibilities arise. Yet the "static nature of these [tree] structures affects the range of options covered [and] reduces the framework for player interaction". Louchart et al. go on to argue that "the integration of interactivity into game narratives requires a rethinking of the design process" because these tree-like structures either expand exponentially with the inclusion of more narrative elements (such as additional characters added to the game) or have to remain so simple and rigid that the player's immersion in the game world is threatened.
+
+In short, with a greater amount of gameplay content comes infeasible exponential growth in the number of branches of a narrative tree structure. If the amount of potential story branches is too high, developers are forced to simplify the story, resulting in less (or no) player interactivity.
+
+\subsection{The Narrative Paradox}
+
+It is common for narrative design in computer games to follow a plot-based approach, meaning that complete control over every aspect of the story is required by the author, leaving little room for interaction by the player. Louchart and Aylett recognised that the "authoring of interactive narrative presents the paradox that ... the author requires control over the unfolding narrative whilst ... the user expects freedom over their decisions." [3][4]. These two goals clearly conflict. The greater the level of interactivity provided to the player, the less control the author has over the story's events. Equally, the more control the author has over the story, the less room there is for the player to interact with characters and change the course of the narrative. This concept has been dubbed the "Narrative Paradox" [5]. Louchart and Aylett suggest that a solution to this paradox should divert from the branching plot-based approaches implemented in current computer games, hence also solving the problem of an exponentially increasing number of diverging storylines.
+
+\subsection{Emergent Narrative}
+
+Aylett proposed Emergent Narrative (EN) as an alternative. EN is an approach to designing interactive narratives where, instead of a fixed, authored plot, the "narrative weight of the application is shared by authors and players." [3][5][6]. This is typically achieved through simulating a virtual world, including virtual characters with different behaviours created by the author. The storyline then "emerges" at run-time from the interactions between these autonomous agents, and the player [2]. The advantage of an EN approach is that the narrative is non-linear and allows for a greater level of player interactivity. Despite this, ENs are unpredictable at authoring time. Kriegel and Aylett explain how authors are forced to "let go of specific story lines altogether and ... focus on creating the elements from which the story will emerge." [7]. ENs work as a sort of 'sandbox'; the author defines the limits of the story world and creates the characters and behaviours that fill it, then leaves the simulation to create a story, providing no further input during run-time.\\
+
+\noindent ENs benefit from having no rigid structure to their story as there is no branching tree restricting the range of potential storylines. This solves the problem of infeasible exponential growth and allows for a potentially limitless number of possible storylines (should the simulation be complex enough). However, the narrative paradox remains. In fact, emergent narratives are the opposite of the plot-based approach; where plot-based approaches require high levels of authorship and direction, restricting player interactivity, emergent narratives implicitly prevent the author from giving any direction at all, making them highly unpredictable.
+
+Yet another disadvantage of emergent narrative approaches are their reliance on well implemented virtual agents and their control logic. If the AI controlling each agent is too simple, then the story is unlikely to be very compelling or complex enough to satisfy the player. Or, if the AI has too limited a set of possible responses to stimuli in its environment, the player may see the same storylines again and again, threatening their immersion in the narrative.
+
+\subsection{Motivation}
+
+Despite possessing impressive graphical fidelity, most modern computer games fail to provide a truly dynamic and changing narrative to their players. Instead, their storylines are confined to simple branching tree structures which grow exponentially with additional game content, and leave little room for player interaction. This can leave players feeling underwhelmed, wishing they had more influence on the narrative direction.\\
+
+\noindent The motivation for this project is to develop a new approach to interactive storytelling that partially mitigates the problems of the narrative paradox. This project includes the development of a prototype IS system which aims to generate compelling narratives and give players a greater sense of agency, whilst simulatenously providing adequate control of the narrative to the author. This paper focuses on simulation-based approaches which exploit the usefulness of emergent narratives, and omit the restrictions of plot-based narrative designs.
+
+\section{Related Work}
+
+\subsection{Origins of Interactive Storytelling}
+
+\subsection{The Rise of Emergence in Game Narratives}
+
+\subsection{Notable Projects}
+
+\section{A New Approach}
+
+\section{Project Progress}
+
+\newpage
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{20}
+
+\bibitem{Fundamentals of Interactive Storytelling}
+Bostan B., \& Marsh T. (2012). 
+"Fundamentals Of Interactive Storytelling". 
+\textit{Academic Journal of Information Technology}, \textbf{3}(8), pp. 20-42
+
+\bibitem{A Comparison of Interactive Narrative System Approaches using Human Improvisational Actors}
+Riedl M. O. (2010). 
+"A Comparison of Interactive Narrative System Approaches using Human Improvisational Actors".
+\textit{Georgia Institute of Technology, College of Computing}
+
+\bibitem{Authoring Emergent Narrative-Based Games}
+Louchart S., Aylett R., Kriegel M., Dias J., Figueiredo R., \& Paiva A. (2008).
+"Authoring Emergent Narrative-Based Games".
+\textit{Journal of Game Development}, \textbf{3}(1), pp. 19–37
+
+\bibitem{Solving the Narrative Paradox in VEs - Lessons from RPGs}
+Louchart S., \& Aylett R. (2003).
+"Solving the Narrative Paradox in VEs - Lessons from RPGs"
+\textit{In: Rist T., Aylett R.S., Ballin D., Rickel J. (eds) Intelligent Virtual Agents. IVA 2003. Lecture Notes in Computer Science, Vol. 2792}, pp. 244-248
+
+\bibitem{Emergent Narrative, Social Immersion and "Storification"}
+Aylett R. (2000).
+"Emergent Narrative, Social Immersion and "Storification"".
+\textit{Proceedings Narrative and Learning Environments Conference}, Edinburgh, Scotland
+
+\bibitem{Narrative in Virtual Environment - Towards Emergent Narrative}
+Aylett R. (1999).
+"Narrative in Virtual Environment - Towards Emergent Narrative"
+\textit{In: Proceedings of the AAAI Fall Symposium on Narrative Intelligence, 1999}
+
+\bibitem{Emergent Narrative As A Novel Framework For Massively Collaborative Authoring}
+Kriegel M., \& Aylett R. (2008).
+"Emergent Narrative As A Novel Framework For Massively Collaborative Authoring".
+\textit{In: Prendinger H., Lester J., Ishizuka M. (eds) Intelligent Virtual Agents. IVA 2008. Lecture Notes in Computer Science, vol 5208}
+
+
+\end{thebibliography}
+ 
+\end{document}
