@@ -31,7 +31,7 @@
 % --- End of Author Metadata ---
 
 \title{A System for Simulation-based, Emergent, Interactive Narrative Generation}
-%\subtitle{[Extended Abstract]}
+\subtitle{\large\textrm{INTERIM REPORT\\ (16/11/2018)}}
 %
 % You need the command \numberofauthors to handle the 'placement
 % and alignment' of the authors beneath the title.
@@ -75,7 +75,7 @@
 % 1st. author
 \alignauthor
 Oliver Mitchell\\
-       \affaddr{Universiy of Nottingham}\\
+       \affaddr{University of Nottingham}\\
        \email{psyom1@nottingham.ac.uk}
 % 2nd. author
 \alignauthor
@@ -96,7 +96,8 @@ Recent research in the field of interactive storytelling (IS) has focused on the
 % We no longer use \terms command
 %\terms{Theory}
 
-\keywords{interactive storytelling; emergent narratives; games; autonomous virtual agents}
+\keywords{interactive storytelling; games; 
+autonomous virtual agents; emergent narratives}
 
 \section{Introduction}
 Most modern computer games fail to provide a dynamic and changing narrative to their players. Instead, they confine storylines to simple branching tree structures which grow exponentially with additional game content, and leave little room for player interaction. Research in the field of interactive storytelling (IS) has focused on the advantages of "emergent narratives" (ENs). With this approach, the storyline "emerges" at run-time from the interactions between author-programmed autonomous agents and the player. The benefit is a non-linear narrative, allowing for greater player interactivity. However, ENs are unpredictable at authoring time, removing the author's control over the story's events.\\
@@ -129,27 +130,33 @@ Yet another disadvantage of emergent narrative approaches are their reliance on 
 
 \subsection{Motivation}
 
-\noindent The motivation for this project is to develop a new approach to interactive storytelling that partially mitigates the problems of the narrative paradox and improves upon the drawbacks of existing solutions. This project includes the development of a prototype IS system which aims to generate compelling narratives and give players a greater sense of agency, whilst simulatenously providing adequate control of the narrative to the author. This paper focuses on simulation-based approaches which exploit the usefulness of emergent narratives, and omit the restrictions of plot-based narrative designs.
+\noindent The motivation for this project is to develop a new approach to interactive storytelling which utilises and combines components of successful, existing emergent narrative systems in order to generate compelling narratives and give players a greater sense of agency, whilst simulatenously providing adequate control of the narrative to the author. This paper focuses on simulation-based approaches which exploit the usefulness of emergent narratives, and omit the restrictions of plot-based narrative designs.
 
 \section{Related Work}
 \subsection{History of Digital Storytelling}
-Since the 1970s, there have been many emergent narrative systems developed both in research and for commercial games. Early examples of story generation include \textit{Novel Writer}, a system that generated 2000+ word murder mystery stories that emerged from the actions simulated by each character [8], and \textit{TailSpin}, a complex system that models rational behaviour for each character, including the production of personal goals that each agent can attempt to achieve autonomously through the creation of its own plan; a series of actions it may take [9]. \textit{Virtual Storyteller} was another system that, despite a lack of interaction, created stories via the actions and cooperation of intelligent agents. In this system, plots are not pre-defined but created by the actions of the agents alongside a "virtual director"; a seperate agent that maintains general story-world knowledge about the plot structure which it uses to judge whether a character's intended actions fits into the narrative in order to produce a "good" plot. Consequently, unlike the full-autonomy displayed in \textit{TailSpin}, the agents in \textit{Virtual Storyteller} can be considered only semi-autonomous because they are consistently guided in their actions to create a well-structured plot [10]. Despite being emergent narrative systems, none of these examples can be considered examples of interactive storytelling because they do not allow a user to change the path of the story at run-time (\textit{Novel Writer} and \textit{TailSpin} only accepted user input for the initial storyworld state and \textit{Virtual Storyteller} allows for no user input whatsoever, relying solely on its encapsulated virtual director to direct the plot).
+\subsubsection{Early approaches}
+Since the 1970s, there have been many digital storytelling systems developed both in research and for commercial games. Early examples of story generation include \textit{Novel Writer}, a system that generated 2000+ word murder mystery stories that emerged from the actions simulated by each character [8], and \textit{TailSpin}, a complex system that models rational behaviour for each character, including the production of personal goals that each agent can attempt to achieve autonomously through the creation of its own plan; a series of actions it may take [9]. \textit{Virtual Storyteller} was another system that, despite a lack of interaction, created stories via the actions and cooperation of intelligent agents. In this system, plots are not pre-defined but created by the actions of the agents alongside a "virtual director"; a seperate agent that maintains general story-world knowledge about the plot structure which it uses to judge whether a character's intended actions fits into the narrative in order to produce a "good" plot. Consequently, unlike the full-autonomy displayed in \textit{TailSpin}, the agents in \textit{Virtual Storyteller} can be considered only semi-autonomous because they are consistently guided in their actions to create a well-structured plot [10]. 
 
-Succeeding these establishing approaches to digital storytelling came a greater focus on emergent storytelling and a move towards non-branching, character-focused systems. 
-[Talk about coining of the term "emergent narrative"]
+Despite producing compelling emergent narratives, none of these systems can be considered examples of interactive storytelling because they do not allow a user to change the path of the story at run-time (\textit{Novel Writer} and \textit{TailSpin} only accepted user input for the initial storyworld state and \textit{Virtual Storyteller} allows for no user input whatsoever, relying solely on its encapsulated virtual director to direct the plot).\\
 
-[Talk about the success of 
+\subsubsection{Towards Emergent Narratives}
 
+\noindent Following these originating approaches came a greater focus on emergent storytelling and a move towards non-branching, character-focused systems. Aylett first coined the term "emergent narrative" in 1999 when discussing the narrative issues arising from placing children's TV characters in a virtual environment where they and the user have a joint spacial existence [6]. The original television narrative was wholly pre-scripted and viewed passively by the audience from camera positions determined by the creators. This strategy is unsuitable for use in a virtual environment where the user is transformed from a spectator to a potential participant. Aylett argues that a pre-determined narrative means the role of the user must also be pre-determined. Therefore, relaxing this constraint allows the user to be more freely involved. 
 
-\subsection{Commerical Successes}
+Many groups have looked at producing emergent narratives by treating characters as virtual actors [barbara hayes roght "virtual theater"] [IMPROV virtual actors system 97]. In such a scenario, the focus of the user is moved from a participant to a director, where they're able to construct narratives involving virtual actors and themselves. This has been repeatedly compared to the playtime of young children where they switch repeatedly between particpant and director in order to control the direction of their roleplay [6][children reference]. 
+
+Emergent narratives 
+
+\subsection{Emergent Narrative in Commercial Games}
 Sims, Dwarf Fortress and Rimworld
 Facade was an interactive story created by Mateas and Stern in 2005 [CITATION]
 
-\subsection{Emergent Storytelling Approaches in Research}
+\subsection{Existing Emergent Narrative Systems}
 Emergent Narrative introduced by Aylett in 1999 [6]
 FearNot! [CITATION]
 
-\section{A New Approach}
+\section{A Hybrid Emergent Narrative System}
+\subsection{Design}
 
 \section{Project Progress}
 
