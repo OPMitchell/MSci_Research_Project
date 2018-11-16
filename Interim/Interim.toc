@@ -1,14 +1,14 @@
-\contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {2}Background}{2}
-\contentsline {subsection}{\numberline {2.1}Defining Interactive Storytelling}{2}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Background}{1}
+\contentsline {subsection}{\numberline {2.1}Defining Interactive Storytelling}{1}
 \contentsline {subsection}{\numberline {2.2}Problems with the Integration of Interactivity into Game Narratives}{2}
 \contentsline {subsection}{\numberline {2.3}The Narrative Paradox}{2}
-\contentsline {subsection}{\numberline {2.4}Emergent Narrative}{3}
+\contentsline {subsection}{\numberline {2.4}Emergent Narrative}{2}
 \contentsline {subsection}{\numberline {2.5}Motivation}{3}
-\contentsline {section}{\numberline {3}Related Work}{4}
-\contentsline {subsection}{\numberline {3.1}Origins of Interactive Storytelling}{4}
-\contentsline {subsection}{\numberline {3.2}The Rise of Emergence in Game Narratives}{4}
-\contentsline {subsection}{\numberline {3.3}Notable Projects}{4}
-\contentsline {section}{\numberline {4}A New Approach}{4}
-\contentsline {section}{\numberline {5}Project Progress}{4}
-\contentsline {section}{References}{5}
+\contentsline {section}{\numberline {3}Related Work}{3}
+\contentsline {subsection}{\numberline {3.1}History of Interactive Storytelling}{3}
+\contentsline {subsection}{\numberline {3.2}Commerical Successes}{3}
+\contentsline {subsection}{\numberline {3.3}Emergent Storytelling Approaches in Research}{3}
+\contentsline {section}{\numberline {4}A New Approach}{3}
+\contentsline {section}{\numberline {5}Project Progress}{3}
+\contentsline {section}{References}{4}
