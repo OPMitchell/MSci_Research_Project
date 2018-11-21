@@ -90,7 +90,7 @@ Peter Blanchfield\\
 
 \maketitle
 \begin{abstract}
-Recent research in the field of interactive storytelling (IS) has focused on the advantages of "emergent narratives" (ENs). With this approach, the storyline 'emerges' at run-time from the interactions between author-programmed autonomous agents and the player. The benefit is a non-linear narrative, allowing for greater player interactivity. However, ENs are unpredictable at authoring time, removing the author's control over the plot structure. The struggle to balance the author's control over game narrative whilst simulatenously allowing the player to influence the story's direction has been dubbed the "Narrative Paradox". We discuss the design and implementation of a new hybrid emergent storytelling system for creating unscripted narratives which aims to integrate the successful components of existing approaches, including an appraisal-driven agent architecture extended to model autobiographical memory, and a "virtual director" which maintains storyworld knowledge and uses a novel metaheuristic genetic algorithm to generate suitable global events for agents to appraise and respond to. An evaluation of the system's effectiveness (based on comparative user-testing) is discussed with a particular regard to player "immersion" and believability of the generated narrative.
+Recent research in the field of interactive storytelling (IS) has focused on the advantages of ``emergent narratives'' (ENs). With this approach, the storyline 'emerges' at run-time from the interactions between author-programmed autonomous agents and the player. The benefit is a non-linear narrative, allowing for greater player interactivity. However, ENs are unpredictable at authoring time, removing the author's control over the plot structure. The struggle to balance the author's control over game narrative whilst simulatenously allowing the player to influence the story's direction has been dubbed the ``Narrative Paradox''. We discuss the design and implementation of a new hybrid emergent storytelling system for creating unscripted narratives which aims to integrate the successful components of existing approaches, including an appraisal-driven agent architecture extended to model autobiographical memory, and a ``virtual director'' which maintains storyworld knowledge and uses a novel metaheuristic genetic algorithm to generate suitable global events for agents to appraise and respond to. An evaluation of the system's effectiveness (based on comparative user-testing) is discussed with a particular regard to player ``immersion'' and believability of the generated narrative.
 \end{abstract}
 
 % We no longer use \terms command
@@ -100,25 +100,25 @@ Recent research in the field of interactive storytelling (IS) has focused on the
 autonomous virtual agents; emergent narratives}
 
 \section{Introduction}
-Most modern computer games fail to provide a dynamic and changing narrative to their players. Instead, they confine storylines to simple branching tree structures which grow exponentially with additional game content, and leave little room for player interaction. Research in the field of interactive storytelling (IS) has focused on the advantages of "emergent narratives" (ENs). With this approach, the storyline "emerges" at run-time from the interactions between author-programmed autonomous agents and the player. The benefit is a non-linear narrative, allowing for greater player interactivity. However, ENs are unpredictable at authoring time, removing the author's control over the story's events.\\
+Most modern computer games fail to provide a dynamic and changing narrative to their players. Instead, they confine storylines to simple branching tree structures which grow exponentially with additional game content, and leave little room for player interaction. Research in the field of interactive storytelling (IS) has focused on the advantages of ``emergent narratives'' (ENs). With this approach, the storyline ``emerges'' at run-time from the interactions between author-programmed autonomous agents and the player. The benefit is a non-linear narrative, allowing for greater player interactivity. However, ENs are unpredictable at authoring time, removing the author's control over the story's events.\\
 
-\noindent The struggle to balance the author's control over game narrative whilst simulatenously allowing the player to influence the story's direction has been dubbed the "Narrative Paradox" [5]. This paper proposes a new system which aims to utilise and combine components of successful, existing emergent narrative systems.
+\noindent The struggle to balance the author's control over game narrative whilst simulatenously allowing the player to influence the story's direction has been dubbed the ``Narrative Paradox'' [5]. This paper proposes a new system which aims to utilise and combine components of successful, existing emergent narrative systems.
 
 \section{Background}
 
 \subsection{Defining Interactive Storytelling}
 
-Interactive storytelling is a unique form of narrative design seen in digital entertainment mediums where no pre-determined storyline exists. Instead, the user can change the story and influence the characters themselves. Bostan and Marsh define interactive storytelling as an approach to computer game narrative design where "real-time feedback collected from the players is used by the game engine to continuously modify the content as it is being delivered." [1]. The key aspect of interactive storytelling is that the player is an active participant and their in-game actions have a direct effect on the narrative that is told. This differs from traditional computer game narratives which typically consist of an unchanging linear story with a pre-defined outcome.
+Interactive storytelling is a unique form of narrative design seen in digital entertainment mediums where no pre-determined storyline exists. Instead, the user can change the story and influence the characters themselves. Bostan and Marsh define interactive storytelling as an approach to computer game narrative design where ``real-time feedback collected from the players is used by the game engine to continuously modify the content as it is being delivered.'' [1]. The key aspect of interactive storytelling is that the player is an active participant and their in-game actions have a direct effect on the narrative that is told. This differs from traditional computer game narratives which typically consist of an unchanging linear story with a pre-defined outcome.
 
 \subsection{Problems with the Integration of Interactivity into Game Narratives}
 
-In most computer games, attempts at complex, dynamic storylines are usually ``confined to simple branching tree structures'' [3]. Furthermore, as the scope of games increases and development effort is focused on assets such as textures, 3D-modelling and other gameplay content, a greater number of narrative possibilities arise. However, the ``static nature of these [tree] structures affects the range of options covered [and] reduces the framework for player interaction''. Louchart et al. suggest``the integration of interactivity into game narratives requires a rethinking of the design process'' because these tree-like structures either expand exponentially with the inclusion of more narrative elements (such as additional characters added to the game) or have to remain so simple and rigid that the player's immersion in the game world is threatened.
+In most computer games, attempts at complex, dynamic storylines are usually ``confined to simple branching tree structures'' [3]. Furthermore, as the scope of games increases and development effort is focused on assets such as textures, 3D-modelling and other gameplay content, a greater number of narrative possibilities arise. However, the ``static nature of these [tree] structures affects the range of options covered [and] reduces the framework for player interaction''. Louchart et al. suggest ``the integration of interactivity into game narratives requires a rethinking of the design process'' because these tree-like structures either expand exponentially with the inclusion of more narrative elements (such as additional characters added to the game) or have to remain so simple and rigid that the player's immersion in the game world is threatened.
 
 In short, with a greater amount of gameplay content comes infeasible exponential growth in the number of branches of a narrative tree structure. If the amount of potential story branches is too high, developers are forced to simplify the story, resulting in less (or no) player interactivity.
 
 \subsection{The Narrative Paradox}
 
-It is common for narrative design in computer games to follow a plot-based approach, meaning that complete control over every aspect of the story is required by the author, leaving little room for interaction by the player. Louchart and Aylett recognised that the ``authoring of interactive narrative presents the paradox that ... the author requires control over the unfolding narrative whilst ... the user expects freedom over their decisions.'' [3][4]. These two goals clearly conflict. The greater the level of interactivity provided to the player, the less control the author has over the story's events. Equally, the more control the author has over the story, the less room there is for the player to interact with characters and change the course of the narrative. This concept has been dubbed the "Narrative Paradox" [5]. Louchart and Aylett suggest that a solution to this paradox should divert from the branching plot-based approaches implemented in current computer games, hence also solving the problem of an exponentially increasing number of diverging storylines.
+It is common for narrative design in computer games to follow a plot-based approach, meaning that complete control over every aspect of the story is required by the author, leaving little room for interaction by the player. Louchart and Aylett recognised that the ``authoring of interactive narrative presents the paradox that ... the author requires control over the unfolding narrative whilst ... the user expects freedom over their decisions.'' [3][4]. These two goals clearly conflict. The greater the level of interactivity provided to the player, the less control the author has over the story's events. Equally, the more control the author has over the story, the less room there is for the player to interact with characters and change the course of the narrative. This concept has been dubbed the ``Narrative Paradox'' [5]. Louchart and Aylett suggest that a solution to this paradox should divert from the branching plot-based approaches implemented in current computer games, hence also solving the problem of an exponentially increasing number of diverging storylines.
 
 \subsection{Emergent Narrative}
 
@@ -135,28 +135,28 @@ Yet another disadvantage of emergent narrative approaches are their reliance on 
 \section{Related Work}
 \subsection{History of Digital Storytelling}
 \subsubsection{Early approaches}
-Since the 1970s, there have been many digital storytelling systems developed both in research and for commercial games. Early examples of story generation include \textit{Novel Writer}, a system that generated 2000+ word murder mystery stories that emerged from the actions simulated by each character [8], and \textit{TaleSpin}, a complex system that models rational behaviour for each character, including the production of personal goals that each agent can attempt to achieve autonomously through the creation of its own plan; a series of actions it may take [9]. \textit{Virtual Storyteller} was another system that, despite a lack of interaction, created stories via the actions and cooperation of intelligent agents. In this system, plots are not pre-defined but created by the actions of the agents alongside a "virtual director"; a seperate agent that maintains general story-world knowledge about the plot structure which it uses to judge whether a character's intended actions fits into the narrative in order to produce a "good" plot. Consequently, unlike the full-autonomy displayed in \textit{TaleSpin}, the agents in \textit{Virtual Storyteller} can be considered only semi-autonomous because they are consistently guided in their actions to create a well-structured plot [10]. 
+Since the 1970s, there have been many digital storytelling systems developed both in research and for commercial games. Early examples of story generation include \textit{Novel Writer}, a system that generated 2000+ word murder mystery stories that emerged from the actions simulated by each character [8], and \textit{TaleSpin}, a complex system that models rational behaviour for each character, including the production of personal goals that each agent can attempt to achieve autonomously through the creation of its own plan; a series of actions it may take [9]. \textit{Virtual Storyteller} was another system that, despite a lack of interaction, created stories via the actions and cooperation of intelligent agents. In this system, plots are not pre-defined but created by the actions of the agents alongside a ``virtual director''; a seperate agent that maintains general story-world knowledge about the plot structure which it uses to judge whether a character's intended actions fits into the narrative in order to produce a ``good'' plot. Consequently, unlike the full-autonomy displayed in \textit{TaleSpin}, the agents in \textit{Virtual Storyteller} can be considered only semi-autonomous because they are consistently guided in their actions to create a well-structured plot [10]. 
 
 Despite producing compelling emergent narratives, none of these systems can be considered examples of interactive storytelling because they do not allow a user to change the path of the story at run-time (\textit{Novel Writer} and \textit{TaleSpin} only accepted user input for the initial storyworld state and \textit{Virtual Storyteller} allows for no user input whatsoever, relying solely on its encapsulated virtual director to direct the plot).\\
 
 \subsubsection{Towards Emergent Narratives}
 
-\noindent Following these originating approaches came a greater focus on emergent storytelling and a move towards non-branching, character-focused systems. Aylett first coined the term "emergent narrative" in 1999 when discussing the narrative issues arising from placing children's TV characters in a virtual environment where they and the user have a joint spacial existence [6]. The original television narrative was wholly pre-scripted and viewed passively by the audience from camera positions determined by the creators. This strategy is unsuitable for use in a virtual environment where the user is transformed from a spectator to a potential participant. Aylett argues that a pre-determined narrative means the role of the user must also be pre-determined. Therefore, relaxing this constraint allows the user to be more freely involved.
+\noindent Following these originating approaches came a greater focus on emergent storytelling and a move towards non-branching, character-focused systems. Aylett first coined the term ``emergent narrative'' in 1999 when discussing the narrative issues arising from placing children's TV characters in a virtual environment where they and the user have a joint spacial existence [6]. The original television narrative was wholly pre-scripted and viewed passively by the audience from camera positions determined by the creators. This strategy is unsuitable for use in a virtual environment where the user is transformed from a spectator to a potential participant. Aylett argues that a pre-determined narrative means the role of the user must also be pre-determined. Therefore, relaxing this constraint allows the user to be more freely involved.
 
-The solution is to build the narrative from the bottom-up through the interactions of the characters. Many groups have looked at producing emergent narratives by treating characters as virtual actors [barbara hayes roght "virtual theater"] [IMPROV virtual actors system 97]. In such a scenario, the focus of the user is moved from a participant to a director, where they're able to construct narratives involving virtual actors and themselves. This has been repeatedly compared to the playtime of young children where they switch repeatedly between particpant and director in order to control the direction of their roleplay [6][children reference]. 
+The solution is to build the narrative from the bottom-up through the interactions of the characters. Many groups have looked at producing emergent narratives by treating characters as virtual actors [barbara hayes roght ``virtual theater''] [IMPROV virtual actors system 97]. In such a scenario, the focus of the user is moved from a participant to a director, where they're able to construct narratives involving virtual actors and themselves. This has been repeatedly compared to the playtime of young children where they switch repeatedly between particpant and director in order to control the direction of their roleplay [6][children reference]. 
 
 \subsection{Existing Emergent Narrative Systems}
 
 \subsubsection{Automated Planning with HTNs}
 
-Cavazza et al. produced a prototype character-based system which focused on defining the possible actions of individual characters in hierarchical task networks (HTN) in order to create automated plans and achieve character desired goals [11]. Characters act autonomously, executing available actions in their HTN in order to reach their goal, similar to the \textit{TaleSpin} system [9].  Each action is categorised and used to determine other characters' reactions (e.g. characters will react negatively to "rude" actions). The system also includes "mood values" for each character which can affect other player's plans. Because the system allows for emergent behaviour, unexpected situations may arise that are unaccounted for in a character's plans. This creates the need for "situated reasoning" and "action repair". Cavazza et al. explains that situated reasoning "originates from the discrepancy between an agent's expectations and action preconditions" and is focused on the character aiming to achieve a specific result in a given situation, or avoiding an undesirable result. Typically, this is seen when a character's current plan is interrupted and they must deal with a specific unanticipated situation. Action repair is focused on recovering from action failure, when external factors threaten the satisfaction of executability conditions. This system is primarily plan focused and authoring constitutes describing the sub-tasks in each character's hierarchical task network, and the character's reactions to "various generic situations, mostly arising
+Cavazza et al. produced a prototype character-based system which focused on defining the possible actions of individual characters in hierarchical task networks (HTN) in order to create automated plans and achieve character desired goals [11]. Characters act autonomously, executing available actions in their HTN in order to reach their goal, similar to the \textit{TaleSpin} system [9].  Each action is categorised and used to determine other characters' reactions (e.g. characters will react negatively to ``rude'' actions). The system also includes ``mood values'' for each character which can affect other player's plans. Because the system allows for emergent behaviour, unexpected situations may arise that are unaccounted for in a character's plans. This creates the need for ``situated reasoning'' and ``action repair''. Cavazza et al. explains that situated reasoning ``originates from the discrepancy between an agent's expectations and action preconditions'' and is focused on the character aiming to achieve a specific result in a given situation, or avoiding an undesirable result. Typically, this is seen when a character's current plan is interrupted and they must deal with a specific unanticipated situation. Action repair is focused on recovering from action failure, when external factors threaten the satisfaction of executability conditions. This system is primarily plan focused and authoring constitutes describing the sub-tasks in each character's hierarchical task network, and the character's reactions to ``various generic situations, mostly arising
 from the conjunction of actions from the characters'
-respective plans" [11].\\ 
+respective plans'' [11].\\ 
 
 \subsubsection{Modelling Social Interaction: PromWeek}
 
-\newline McCoy et al. produced \textit{Prom Week} [12], a game described as a "social physics" simulator which utilises a bespoke AI system: \textit{Comme il Faut} (CiF) [13]. The goal of the project was to design a game that could provide "satisfying stories that reflect player choices in a wide possibility space" [12].
-As the title suggests, \textit{Prom Week} revolves around the social lives of a group of teenagers the week before their prom night. The player is given a set of goals which they must complete within the week, for example; finding a date to attend the prom with. McCoy et al.'s goal was to decrease the volume of explicitly authored story space whilst increasing the amount explorable by the player. They reasoned the best approach was to build "a social artificial intelligence (AI) system that computationally models social space and social interaction". instead of having the author explicitly detail each possible interaction (a burdensome and effectively intractable task should the number of interactions be large enough). With their proposed AI system (CiF),  the author provides "reusable and recombinable representations of social norms and social interactions" for autonomous agents in the model [13]. The social state existing across these agents is modified by multi-character social interactions, or social exchanges that utilise these representations. In effect, autonomous agents (the characters) perceive the global social state and attempt to alter it to accomplish their own social goals. This is achieved through social interactions, all of which follow the author-specified rules.\\
+\newline McCoy et al. produced \textit{Prom Week} [12], a game described as a ``social physics'' simulator which utilises a bespoke AI system: \textit{Comme il Faut} (CiF) [13]. The goal of the project was to design a game that could provide ``satisfying stories that reflect player choices in a wide possibility space'' [12].
+As the title suggests, \textit{Prom Week} revolves around the social lives of a group of teenagers the week before their prom night. The player is given a set of goals which they must complete within the week, for example; finding a date to attend the prom with. McCoy et al.'s goal was to decrease the volume of explicitly authored story space whilst increasing the amount explorable by the player. They reasoned the best approach was to build ``a social artificial intelligence (AI) system that computationally models social space and social interaction'''. instead of having the author explicitly detail each possible interaction (a burdensome and effectively intractable task should the number of interactions be large enough). With their proposed AI system (CiF),  the author provides ``reusable and recombinable representations of social norms and social interactions'' for autonomous agents in the model [13]. The social state existing across these agents is modified by multi-character social interactions, or social exchanges that utilise these representations. In effect, autonomous agents (the characters) perceive the global social state and attempt to alter it to accomplish their own social goals. This is achieved through social interactions, all of which follow the author-specified rules.\\
 
 \newline The CiF system itself does not attempt to model the entire story world. It is a social reasoning component that aims to realistically model the rules and patterns that character should follow during any social exchange. In contrast to Cavazza et al.'s hierarchical task network planning approach [11] (and other approaches such as behaviour trees), CiF encapsulates domain knowledge in one large rulebase that represents the social norms of a given story world. The system chooses each character's behaviour based on these rules. Unlike the branching plans produced by Cavazza et al.'s system [11], CiF doesn't create a static series of events, but the logic of the story world, the characters involved, and their goals. CiF is inherently driven by the simulation of social exchanges, therefore the way in which goals are met is entirely emergent and unplanned. This support Aylett's initial description of emergent narratives as emerging from the interactions of characters, rather than being pre-planned [5][6].
 
@@ -169,18 +169,18 @@ Emergent narratives are not solely practiced in research; many commercially succ
 
 \subsubsection{The Sims}
 \textit{The Sims} [16] is possibly one of the most widely played and easily recognisable video games of the simulation genre and is a textbook example of emergent narrative creation. 
-From the outset the player is provided with great freedom, being able to create their own character; namely their appearance, but later installments in the franchise allow for the selection of personality traits that help define unique characters and change the results of social interactions. There is no rigid storyline to the game and no plot the player must follow. Instead, the user "plays god" and instructs their avatar to perform desired actions such as socialising with other characters or interacting with objects in the world. Typically, a narrative emerges from the results of the player's actions and the interactions of the player's avatar with other characters (e.g. neighbours or family members). For example, the player may choose to use the "flirt" social interaction with another character they meet in a bar who will respond accordingly. This could lead to an in-game relationship, marriage, and even starting a family.
+From the outset the player is provided with great freedom, being able to create their own character; namely their appearance, but later installments in the franchise allow for the selection of personality traits that help define unique characters and change the results of social interactions. There is no rigid storyline to the game and no plot the player must follow. Instead, the user ``plays god'' and instructs their avatar to perform desired actions such as socialising with other characters or interacting with objects in the world. Typically, a narrative emerges from the results of the player's actions and the interactions of the player's avatar with other characters (e.g. neighbours or family members). For example, the player may choose to use the ``flirt'' social interaction with another character they meet in a bar who will respond accordingly. This could lead to an in-game relationship, marriage, and even starting a family.
 
 \textit{The Sims} includes deep simulations of personality and social traits, not dissimilar to \textit{PromWeek}'s social AI system. Characters can also have immediate responses to emotional state, alike the \textit{FearNot!} system's action tendencies. For example, if a character's mood is low enough they will ignore the player's actions in order to satisfy their own needs and improve their mood first.
 
 Despite the high level of freedom given to the player, a serious limitation of \textit{The Sims}' narrative generation is the fact that the quality of the story relies entirely on the player's choice of interesting actions. Should they desire, the player could allow their avatar to live in complete isolation and only watch TV all day, thus resulting in a lack of narrative entirely. There is no guarantee that engaging high-quality narratives will be produced because the player acts autocratically as spectator and director.
 
 \subsubsection{RimWorld}
-\textit{RimWorld} [17] is a "colony simulator" game that was inspired by the highly realistic simulation-based approach to game design pioneered by \textit{Dwarf Fortress} [18], a sandbox game which sees the player manage the livelihood of a group of dwarves.
+\textit{RimWorld} [17] is a ``colony simulator'' game that was inspired by the highly realistic simulation-based approach to game design pioneered by \textit{Dwarf Fortress} [18], a sandbox game which sees the player manage the livelihood of a group of dwarves.
 
-\textit{RimWorld} tasks the player with managing a group of spaceship crash survivors as they construct a colony on their new home: an alien planet. The player must "manage colonists' moods, needs, individual wounds, and illnesses." The game is driven by an intelligent AI storyteller and its creator describes the game not as a strategy game, but as a story generator in its own right. At any given moment, the AI storyteller analyzes the colony's situation and decides which event will make the best story [17]. Accordingly, the AI storyteller can be considered \textit{RimWorld}'s equivalent of \textit{Virtual Storyteller}'s "virtual director" [10];  a seperate agent that maintains story-world knowledge about the plot structure and uses it to adapt the narrative at run-time. As a result, \textit{RimWorld} never suffers from the narrative limitations experienced in \textit{The Sims} where the quality of the story relies wholly on how compelling a player's actions are. Because the AI storyteller acts as an agent itself, its goal can be considered the generation of a "good" story and its process of selecting suitable actions to change the narrative's course can be considered a form of action repair, ensuring that player actions that divert from its goal are eventually remedied. 
+\textit{RimWorld} tasks the player with managing a group of spaceship crash survivors as they construct a colony on their new home: an alien planet. The player must ``manage colonists' moods, needs, individual wounds, and illnesses'' [17]. The game is driven by an intelligent AI storyteller and its creator describes the game not as a strategy game, but as a story generator in its own right. At any given moment, the AI storyteller analyzes the colony's situation and decides which event will make the best story [17]. Accordingly, the AI storyteller can be considered \textit{RimWorld}'s equivalent of \textit{Virtual Storyteller}'s ``virtual director'' [10];  a seperate agent that maintains story-world knowledge about the plot structure and uses it to adapt the narrative at run-time. As a result, \textit{RimWorld} never suffers from the narrative limitations experienced in \textit{The Sims} where the quality of the story relies wholly on how compelling a player's actions are. Because the AI storyteller acts as an agent itself, its goal can be considered the generation of a ``good'' story and its process of selecting suitable actions to change the narrative's course can be considered a form of action repair, ensuring that player actions that divert from its goal are eventually remedied. 
 
-For example, players have the choice of upgrading the colony with weapons and defences to protect characters from periodic waves of attackers. The AI storyteller can evaluate the colony's level of defense and ensure that the next wave of attackers is strong enough to prove challenging to the player and therefore exciting enough to produce a "good" narrative.
+For example, players have the choice of upgrading the colony with weapons and defences to protect characters from periodic waves of attackers. The AI storyteller can evaluate the colony's level of defense and ensure that the next wave of attackers is strong enough to prove challenging to the player and therefore exciting enough to produce a ``good'' narrative.
 
 \section{Designing a Hybrid System}
 \subsection{Criteria}
@@ -211,73 +211,72 @@ For example, players have the choice of upgrading the colony with weapons and de
 
 \bibitem{Bostan and Marsh}
 Bostan B., \& Marsh T. (2012). 
-"Fundamentals Of Interactive Storytelling". 
+``Fundamentals Of Interactive Storytelling''. 
 \textit{Academic Journal of Information Technology}, \textbf{3}(8), pp. 20-42
 
 \bibitem{Riedl}
 Riedl M. O. (2010). 
-"A Comparison of Interactive Narrative System Approaches using Human Improvisational Actors".
+``A Comparison of Interactive Narrative System Approaches using Human Improvisational Actors''.
 \textit{Georgia Institute of Technology, College of Computing}
 
 \bibitem{Authoring Emergent Games}
 Louchart S., Aylett R., Kriegel M., Dias J., Figueiredo R., \& Paiva A. (2008).
-"Authoring Emergent Narrative-Based Games".
+``Authoring Emergent Narrative-Based Games''.
 \textit{Journal of Game Development}, \textbf{3}(1), pp. 19-37
 
 \bibitem{Solving the Narrative Paradox in VEs}
 Louchart S., \& Aylett R. (2003).
-"Solving the Narrative Paradox in VEs - Lessons from RPGs"
+``Solving the Narrative Paradox in VEs - Lessons from RPGs''.
 \textit{In: Rist T., Aylett R.S., Ballin D., Rickel J. (eds) Intelligent Virtual Agents. IVA 2003. Lecture Notes in Computer Science, Vol. 2792}, pp. 244-248
 
 \bibitem{EmergentNarrative}
 Aylett R. (2000).
-"Emergent Narrative, Social Immersion and "Storification"".
+``Emergent Narrative, Social Immersion and ``Storification''''.
 \textit{Proceedings Narrative and Learning Environments Conference}, Edinburgh, Scotland
 
 \bibitem{Towards Emergent Narrative}
 Aylett R. (1999).
-"Narrative in Virtual Environment - Towards Emergent Narrative"
+``Narrative in Virtual Environment - Towards Emergent Narrative''.
 \textit{In: Proceedings of the AAAI Fall Symposium on Narrative Intelligence, 1999}
 
 \bibitem{Massively Collaborative Authoring}
 Kriegel M., \& Aylett R. (2008).
-"Emergent Narrative As A Novel Framework For Massively Collaborative Authoring".
+``Emergent Narrative As A Novel Framework For Massively Collaborative Authoring''.
 \textit{In: Prendinger H., Lester J., Ishizuka M. (eds) Intelligent Virtual Agents. IVA 2008. Lecture Notes in Computer Science, vol 5208}
 
 \bibitem{Novel Writer}
 Klein S., Aeschlimann J.F., Balsiger D.F., Converse S.L., Court C., Foster M., Lao R., Oakley J.D., \& Smith J. (1973).
-"Automatic Novel Writing: A Status Report"
+``Automatic Novel Writing: A Status Report''.
 \textit{University of Wisconsin}
 
 \bibitem{Tale-Spin}
 Meehan, J.R. (1977).
-"Tale-Spin, an Interactive Program that Writes Stories"
+``Tale-Spin, an Interactive Program that Writes Stories''.
 \textit{In: Proceedings of the Fifth International Joint Conference on Artificial Intelligence (IJCAI)}
 
 \bibitem{The Virtual Storyteller}
-Theune, M., Faas S., Nijholt, A., \& Heylen, D. (2003)
-"The Virtual Storyteller: Story Creation by Intelligent Agents"
+Theune, M., Faas S., Nijholt, A., \& Heylen, D. (2003).
+``The Virtual Storyteller: Story Creation by Intelligent Agents''.
 \textit{In: Proceedings of TIDSE 2003: Technologies for Interactive Digital Storytelling and Entertainment}
 
 \bibitem{Character-based Interactive Storytelling}
-Cavazza, M., Charles, F., \& Mead, S.J. (2002)
-"Character-based Interactive Storytelling"
+Cavazza, M., Charles, F., \& Mead, S.J. (2002).
+``Character-based Interactive Storytelling''.
 \textit{IEEE Intelligent Systems}, \textbf{17}(4), pp.17-24
 
 \bibitem{PromWeek}
-McCoy, J., Treanor, M., Samuel, B., Reed, A., Mateas, M., \& Wardrip-Fruin, N. (2013)
-"Prom Week: Designing past the game/story dilemma"
+McCoy, J., Treanor, M., Samuel, B., Reed, A., Mateas, M., \& Wardrip-Fruin, N. (2013).
+``Prom Week: Designing past the game/story dilemma''.
 \textit{In: Proceedings of the Eighth International Conference on the Foundations of Digital Games (FDG 2013)}, pp.94-101
 
 \bibitem{CiF}
-McCoy, J., Treanor, M., Samuel, B., Wardrip-Fruin, N., \& Mateas, M (2013)
-"Comme il Faut: A System for Authoring Playable Social Models"
+McCoy, J., Treanor, M., Samuel, B., Wardrip-Fruin, N., \& Mateas, M (2013).
+``Comme il Faut: A System for Authoring Playable Social Models''.
 \textit{In: Proceedings of the Seventh AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment}, pp.158-163
 
 \bibitem{CiF-CK}
-Guimaraes, M., Santos, P., \& Jhala, A. (2017)
-"CiF-CK: An Architecture for Social NPCs in
-Commercial Games"
+Guimaraes, M., Santos, P., \& Jhala, A. (2017).
+``CiF-CK: An Architecture for Social NPCs in Commercial Games''.
 \textit{2017 IEEE Conference on Computational Intelligence and Games (CIG)}, pp.126-123
 
 \bibitem{CiF-CK Mod Page}
