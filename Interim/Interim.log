@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  21 NOV 2018 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  21 NOV 2018 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -326,45 +326,78 @@ Overfull \hbox (4.3183pt too wide) in paragraph at lines 93--95
 Ns).
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-
- []
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
-Overfull \hbox (3.03168pt too wide) in paragraph at lines 129--130
+Overfull \hbox (3.03168pt too wide) in paragraph at lines 124--125
 []\T1/aer/m/n/9 Yet an-other dis-ad-van-tage of emer-gent nar-ra-tive ap-proach
 es
  []
 
 
-Overfull \hbox (5.45229pt too wide) in paragraph at lines 138--139
+Overfull \hbox (5.45229pt too wide) in paragraph at lines 133--134
 \T1/aer/m/n/9 sys-tems de-vel-oped both in re-search and for com-mer-cial games
 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Overfull \hbox (5.29883pt too wide) in paragraph at lines 144--145
+Overfull \hbox (5.29883pt too wide) in paragraph at lines 139--140
 \T1/aer/m/n/9 character-focused sys-tems. Aylett first coined the term ``emer-
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--150
 
  []
+
+[2]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \newline
+               McCoy et al. produced \textit{Prom Week} [12], a game describ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \newline
+               The CiF system itself does not attempt to model the entire st...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
 
 
 ! LaTeX Error: There's no line here to end.
@@ -374,39 +407,6 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.158 \newline
-               McCoy et al. produced \textit{Prom Week} [12], a game describ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.161 \newline
-               The CiF system itself does not attempt to model the entire st...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.163 \newline
                An extension of the CiF system [14] was proposed by Guimaraes...
 
 Your command was ignored.
@@ -414,21 +414,17 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (4.82217pt too wide) in paragraph at lines 167--167
+Overfull \hbox (4.82217pt too wide) in paragraph at lines 162--162
 []\secfnt Emergent Nar-ra-tive in Com-mer-cial Games 
  []
 
 [3]
-Overfull \hbox (9.70023pt too wide) in paragraph at lines 181--182
+Overfull \hbox (9.70023pt too wide) in paragraph at lines 176--177
 \T1/aer/m/n/9 new home: an alien planet. The player must ``man-age colonists'
  []
 
-
-Underfull \vbox (badness 1558) has occurred while \output is active []
-
-
 ! Too many }'s.
-l.195 \subsubsection{Active Pursuit vs. Interest}}
+l.190 \subsubsection{Active Pursuit vs. Interest}}
                                                   
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -437,7 +433,7 @@ Such booboos are generally harmless, so keep going.
 Here is how much of TeX's memory you used:
  3209 strings out of 493029
  41042 string characters out of 6136233
- 116845 words of memory out of 5000000
+ 118845 words of memory out of 5000000
  6641 multiletter control sequences out of 15000+600000
  58035 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -453,7 +449,7 @@ pe1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
 etic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Interim.pdf (5 pages, 163055 bytes).
+Output written on Interim.pdf (5 pages, 162122 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
