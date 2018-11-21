@@ -147,21 +147,48 @@ The solution is to build the narrative from the bottom-up through the interactio
 
 \subsection{Existing Emergent Narrative Systems}
 
-Cavazza et al. produced a prototype character-based system which focused on defining the possible actions of individual characters in hierarchical task networks (HTN) in order to create plans and achieve character desired goals [11]. Characters act autonomously, executing available actions in their HTN in order to reach their goal, similar to the \textit{TaleSpin} system [9].  Each action is categorised and used to determine other characters' reactions (e.g. characters will react negatively to "rude" actions). The system also includes "mood values" for each character which can affect other player's plans. Because the system allows for emergent behaviour, unexpected situations may arise that are unaccounted for in a character's plans. This creates the need for "situated reasoning" and "action repair". Cavazza et al. explains that situated reasoning "originates from the discrepancy between an agent's expectations and action preconditions" and is focused on the character aiming to achieve a specific result in a given situation, or avoiding an undesirable result. Typically, this is seen when a character's current plan is interrupted and they must deal with a specific unanticipated situation. Action repair is focused on recovering from action failure, when external factors threaten the satisfaction of executability conditions. This system is primarily plan focused and authoring constitutes describing the sub-tasks in each character's hierarchical task network, and the character's reactions to "various generic situations, mostly arising
-from the conjunction of actions from the characters'
-respective plans" [11]. 
+\subsubsection{Automated Planning with HTNs}
 
-McCoy et al. produced \textit{Prom Week}, a game described as a "social physics" simulator which utilises a bespoke AI system: \textit{Comme il Faut} (CiF). The goal of the project was to design a game that could provide "satisfying stories that reflect player choices in a wide possibility space".
-As the title suggests, \textit{Prom Week} revolves around the social lives of a group of teenagers the week before their prom night. The player is given a set of goals which they must complete within the week, for example: finding a date to attend the prom with.
+Cavazza et al. produced a prototype character-based system which focused on defining the possible actions of individual characters in hierarchical task networks (HTN) in order to create automated plans and achieve character desired goals [11]. Characters act autonomously, executing available actions in their HTN in order to reach their goal, similar to the \textit{TaleSpin} system [9].  Each action is categorised and used to determine other characters' reactions (e.g. characters will react negatively to "rude" actions). The system also includes "mood values" for each character which can affect other player's plans. Because the system allows for emergent behaviour, unexpected situations may arise that are unaccounted for in a character's plans. This creates the need for "situated reasoning" and "action repair". Cavazza et al. explains that situated reasoning "originates from the discrepancy between an agent's expectations and action preconditions" and is focused on the character aiming to achieve a specific result in a given situation, or avoiding an undesirable result. Typically, this is seen when a character's current plan is interrupted and they must deal with a specific unanticipated situation. Action repair is focused on recovering from action failure, when external factors threaten the satisfaction of executability conditions. This system is primarily plan focused and authoring constitutes describing the sub-tasks in each character's hierarchical task network, and the character's reactions to "various generic situations, mostly arising
+from the conjunction of actions from the characters'
+respective plans" [11].\\ 
+
+\subsubsection{Modelling Social Interaction: PromWeek}
+
+\newline McCoy et al. produced \textit{Prom Week} [12], a game described as a "social physics" simulator which utilises a bespoke AI system: \textit{Comme il Faut} (CiF) [13]. The goal of the project was to design a game that could provide "satisfying stories that reflect player choices in a wide possibility space" [12].
+As the title suggests, \textit{Prom Week} revolves around the social lives of a group of teenagers the week before their prom night. The player is given a set of goals which they must complete within the week, for example; finding a date to attend the prom with. McCoy et al.'s goal was to decrease the volume of explicitly authored story space whilst increasing the amount explorable by the player. They reasoned the best approach was to build "a social artificial intelligence (AI) system that computationally models social space and social interaction". instead of having the author explicitly detail each possible interaction (a burdensome and effectively intractable task should the number of interactions be large enough). With their proposed AI system (CiF),  the author provides "reusable and recombinable representations of social norms and social interactions" for autonomous agents in the model [13]. The social state existing across these agents is modified by multi-character social interactions, or social exchanges that utilise these representations. In effect, autonomous agents (the characters) perceive the global social state and attempt to alter it to accomplish their own social goals. This is achieved through social interactions, all of which follow the author-specified rules.\\
+
+\newline The CiF system itself does not attempt to model the entire story world. It is a social reasoning component that aims to realistically model the rules and patterns that character should follow during any social exchange. In contrast to Cavazza et al.'s hierarchical task network planning approach [11] (and other approaches such as behaviour trees), CiF encapsulates domain knowledge in one large rulebase that represents the social norms of a given story world. The system chooses each character's behaviour based on these rules. Unlike the branching plans produced by Cavazza et al.'s system [11], CiF doesn't create a static series of events, but the logic of the story world, the characters involved, and their goals. CiF is inherently driven by the simulation of social exchanges, therefore the way in which goals are met is entirely emergent and unplanned. This support Aylett's initial description of emergent narratives as emerging from the interactions of characters, rather than being pre-planned [5][6].
+
+\newline An extension of the CiF system [14] was proposed by Guimaraes et al. that adapted the social physics simulator to a first-person perspective, implemented as a publicly downloadable modification in the \textit{Elder Scrolls V: Skyrim} game engine. The result was an extended interaction space for in-game NPCs leading to more believable characters and an improved player experience, as confirmed by the modification's popularity [15] and the results of user testing.
+
+\subsubsection{Modelling Emotional Behaviour - FearNot!}
 
 \subsection{Emergent Narrative in Commercial Games}
 Sims, Dwarf Fortress and Rimworld
 Facade was an interactive story created by Mateas and Stern in 2005 [CITATION]
 
-\section{A Hybrid Emergent Narrative System}
-\subsection{Design}
+\section{Designing a Hybrid System}
+\subsection{Criteria}
+\subsection{Agent Architecture}
+\subsubsection{Emotional Personality Model}
+\subsubsection{Continuous Planning}
+\subsection{Goals}
+\subsubsection{Active Pursuit vs. Interest}}
+\subsubsection{Managing and Executing Actions}
+\subsubsection{Action Priority Queueing}
+\subsubsection{Need for Asynchronicity}
+\subsection{Virtual Director}
+\subsubsection{Potential for Genetic Algorithm}
+
+\section{Implementation}
+\subsection{Unity}
+\subsection{Prototype System}
 
 \section{Project Progress}
+\subsection{Project Management}
+\subsection{Contributions and Reflections}
+\subsection{Moving Forward}
 
 \newpage
 \addcontentsline{toc}{section}{References}
@@ -221,9 +248,26 @@ Theune, M., Faas S., Nijholt, A., \& Heylen, D. (2003)
 \bibitem{Character-based Interactive Storytelling}
 Cavazza, M., Charles, F., \& Mead, S.J. (2002)
 "Character-based Interactive Storytelling"
-IEEE Intelligent Systems, \textbf{17}(4), pp.17-24
+\textit{IEEE Intelligent Systems}, \textbf{17}(4), pp.17-24
 
 \bibitem{PromWeek}
+McCoy, J., Treanor, M., Samuel, B., Reed, A., Mateas, M., \& Wardrip-Fruin, N. (2013)
+"Prom Week: Designing past the game/story dilemma"
+\textit{In: Proceedings of the Eighth International Conference on the Foundations of Digital Games (FDG 2013)}, pp.94-101
+
+\bibitem{CiF}
+McCoy, J., Treanor, M., Samuel, B., Wardrip-Fruin, N., \& Mateas, M (2013)
+"Comme il Faut: A System for Authoring Playable Social Models"
+\textit{In: Proceedings of the Seventh AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment}, pp.158-163
+
+\bibitem{CiF-CK}
+Guimaraes, M., Santos, P., \& Jhala, A. (2017)
+"CiF-CK: An Architecture for Social NPCs in
+Commercial Games"
+\textit{2017 IEEE Conference on Computational Intelligence and Games (CIG)}, pp.126-123
+
+\bibitem{CiF-CK Mod Page}
+Social NPCs Mod for Elder Scrolls V: Skyrim (2018), available at: https://www.nexusmods.com/skyrim/mods/77792/ [Accessed 21 Nov. 2018]
 
 
 \end{thebibliography}
