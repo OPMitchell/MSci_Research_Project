@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  21 NOV 2018 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  21 NOV 2018 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -418,13 +418,14 @@ Overfull \hbox (4.82217pt too wide) in paragraph at lines 167--167
 []\secfnt Emergent Nar-ra-tive in Com-mer-cial Games 
  []
 
+[3]
 ! Too many }'s.
-l.177 \subsubsection{Active Pursuit vs. Interest}}
+l.187 \subsubsection{Active Pursuit vs. Interest}}
                                                   
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-[3] [4] [5
+[4] [5
 
 ] (./Interim.aux) ) 
 Here is how much of TeX's memory you used:
@@ -446,7 +447,7 @@ w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
 hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Interim.pdf (5 pages, 156542 bytes).
+Output written on Interim.pdf (5 pages, 159166 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
