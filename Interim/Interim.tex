@@ -168,7 +168,11 @@ Louchart et al. produced The \textit{FearNot!} (Fun with Empathic Agents Reachin
 
 Emotions are a crucial aspect of the agent architecture and influence each character's planning process. Emotional values can be used as pre-conditions for potential actions. The use of emotional values (amongst other data, such as memories and social relations) can be used by agents to perform rational processing to intelligently select actions that will help them towards their goal. However, \textit{FAtiMA} also incorporates non-cognitive, reactional processing: "spontaneous reactions triggered by intense emotions [and] not part of the planning process" [3]. With this feature, characters with extreme emotional states can react with appropriate actions; for example, a character with extremely negative emotions may burst out crying, spontaneously. This is an attempt to allow characters to react wholly emotionally to certain situations rather than just cognitively and adds an extra layer of believability.
 
-Finally, \textit{FAtiMA}'s planning
+\textit{FAtiMA}'s planning system requires actions to be defined with preconditions (such as ranges of emotional values, or certain actions occuring) and effects (the outcome of the action). Character's use actions to react to stimuli (other character's actions) or to help them achieve their goals. Goals can be defined as active pursuits or interests. Active pursuit goals are defined as world states which a character strives to attain whereas interest goals are world states that the character wants to maintain. Interest goals can help character choose certain actions over others because actions which modify desired world states are considered undesirable [3].
+
+Due to \textit{FAtiMA}'s flexibility and modularity, some extensions to the architecture have been proposed in order to provide greater functionality and believability. Dias et al. successfully extended FAtiMA, allowing agents to "explicitly talk about their internal thoughts and report their personal past experiences ... [using] a specific type of episodic long term memory" [21][22].
+
+(PDF) I Know What I Did Last Summer: Autobiographic Memory in Synthetic Characters. Available from: https://www.researchgate.net/publication/221622090_I_Know_What_I_Did_Last_Summer_Autobiographic_Memory_in_Synthetic_Characters [accessed Nov 23 2018].
 
 \subsection{Emergent Narrative in Commercial Games}
 Emergent narrative generation methods are not solely practiced in research; many commercially successful games have yielded interesting and unique methods for generating unplanned interactive storylines:
@@ -302,15 +306,26 @@ Tynan Sylvester: RimWorld. Ludeon Studios (2018), available at: https://rimworld
 Adams, T., Adams, Z.: Slaves to Armok: God of Blood Chapter II: Dwarf Fortress (2006)
 
 \bibitem{FAtiMA}
-Dias, J., Macscarenhas, S., \& Paiva, A.
+Dias, J., Macscarenhas, S., \& Paiva, A. (2014)
 ``FAtiMA Modular: Towards an Agent Architecture with
 a Generic Appraisal Framework''.
 \textit{Emotion Modeling} pp.44-56
 
 \bibitem{Emotional Agents}
-Dias, J., \& Paiva, A.
+Dias, J., \& Paiva, A. (2005)
 ``Feeling and Reasoning: A Computational Model for Emotional Agents''.
-\textit{In Proceedings of 12th Portuguese Conference on Artificial Intelligence, EPIA 2005,} pp.127-140
+\textit{In: Proceedings of 12th Portuguese Conference on Artificial Intelligence, EPIA 2005,} pp.127-140
+
+\bibitem{FAtiMA with Memory}
+Dias, J., W. C. Ho., Vogt, T., Beeckman, N., Paiva1, A., \& Andre, E. (2007)
+"I Know What I Did Last Summer: Autobiographic Memory in Synthetic Characters".
+\textit{Affective Computing and Intelligent Interaction: Second International Conference, ACII 2007 Lisbon, Portugal, September 12-14, 2007 Proceedings} pp.606-617
+
+\bibitem{Autobiographical Memory}
+W. C., Ho. \& Watson, S. (2006) 
+"Autobiographic Knowledge for Believable Virtual Charac-ters." 
+\textit{In: Proceedings of Intelligent Virtual Agents 2006 (IVA 2006)} pp.383-394
+
 
 
 \end{thebibliography}

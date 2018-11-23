@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  23 NOV 2018 10:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  23 NOV 2018 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,57 +422,89 @@ Overfull \hbox (2.62529pt too wide) in paragraph at lines 162--162
 Underfull \vbox (badness 1558) has occurred while \output is active []
 
  [3]
-Overfull \hbox (4.82217pt too wide) in paragraph at lines 173--173
+! Missing $ inserted.
+<inserted text> 
+                $
+l.175 ...w.researchgate.net/publication/221622090_
+                                                  I_Know_What_I_Did_Last_Sum...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+l.175 ...researchgate.net/publication/221622090_I_
+                                                  Know_What_I_Did_Last_Summe...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.175 ....net/publication/221622090_I_Know_What_I_
+                                                  Did_Last_Summer_Autobiogra...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.176 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (576.63629pt too wide) in paragraph at lines 175--176
+\T1/aer/m/n/9 Mem-ory in Syn-thetic Char-ac-ters. Avail-able from: https://www.
+researchgate.net/publication/221622090$[][]\OML/cmm/m/it/9 now[]hat[][]id[]ast[
+]ummer[]utobiographic[]emory[]n[]ynthetic[]haracters\OT1/cmr/m/n/9 [\OML/cmm/m/
+it/9 accessedNov\OT1/cmr/m/n/9 232018]\OML/cmm/m/it/9 :$ 
+ []
+
+
+Overfull \hbox (4.82217pt too wide) in paragraph at lines 177--177
 []\secfnt Emergent Nar-ra-tive in Com-mer-cial Games 
  []
 
 
-Overfull \hbox (3.68843pt too wide) in paragraph at lines 174--175
+Overfull \hbox (3.68843pt too wide) in paragraph at lines 178--179
 []\T1/aer/m/n/9 Emergent nar-ra-tive gen-er-a-tion meth-ods are not solely prac
 -
  []
 
 
-Overfull \hbox (9.70023pt too wide) in paragraph at lines 187--188
+Overfull \hbox (9.70023pt too wide) in paragraph at lines 191--192
 \T1/aer/m/n/9 new home: an alien planet. The player must ``man-age colonists'
  []
 
-
-Underfull \vbox (badness 1558) has occurred while \output is active []
-
- [4]
+[4]
 ! Too many }'s.
-l.201 \subsubsection{Active Pursuit vs. Interest}}
+l.205 \subsubsection{Active Pursuit vs. Interest}}
                                                   
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-[5] [6
-
-] (./Interim.aux) ) 
+[5] [6] (./Interim.aux) ) 
 Here is how much of TeX's memory you used:
- 3211 strings out of 493029
- 41068 string characters out of 6136233
- 118853 words of memory out of 5000000
- 6643 multiletter control sequences out of 15000+600000
+ 3213 strings out of 493029
+ 41113 string characters out of 6136233
+ 118861 words of memory out of 5000000
+ 6645 multiletter control sequences out of 15000+600000
  58035 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,35p,1608b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
-hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Interim.pdf (6 pages, 169094 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvet
+ic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Interim.pdf (6 pages, 193610 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
