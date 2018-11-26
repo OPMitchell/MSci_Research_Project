@@ -1,5 +1,6 @@
 \documentclass{sig-alternate-05-2015}
-
+\usepackage[table]{xcolor}
+\usepackage{dblfloatfix}
 
 \begin{document}
 
@@ -103,6 +104,13 @@ autonomous virtual agents; emergent narratives}
 
 \subsection{Defining Interactive Storytelling}
 
+\begin{figure*}
+\centering
+\includegraphics[scale=0.3]{Images/PlotVsEmergent.png}
+\caption{Diagram showing the difference in structure between convential plot-based narratives and interactive emergent narratives. The former is static and sequential, whereas the latter is simulation-based and reacts to player interaction. [3]}
+\label{fig:PlotVsEmergent}
+\end{figure*}
+
 Interactive storytelling is a unique form of narrative design seen in digital entertainment mediums where no pre-determined storyline exists. Instead, the user can change the story and influence the characters themselves. Bostan and Marsh define interactive storytelling as an approach to computer game narrative design where ``real-time feedback collected from the players is used by the game engine to continuously modify the content as it is being delivered.'' [1]. The key aspect of interactive storytelling is that the player is an active participant and their in-game actions have a direct effect on the narrative that is told. This differs from traditional computer game narratives which typically consist of an unchanging linear story with a pre-defined outcome.
 
 \subsection{Problems with the Integration of Interactivity into Game Narratives}
@@ -122,13 +130,6 @@ Aylett proposed Emergent Narratives (EN) as an alternative. ENs are an approach 
 \newline ENs benefit from having no rigid structure to their story because there is no branching tree restricting the range of storylines. This solves the problem of infeasible exponential growth because there are no branches to manage and the storyline emerges on its own. This allows for a potentially inumerable amount of emergent storylines (should the simulation be complex enough).
 
 Despite this, a disadvantage of emergent narratives are their reliance on well implemented virtual agents and their control logic. If the AI controlling each agent is too simple, then the story is unlikely to be complex enough to satisfy the player. Or, if the AI has too limited a set of possible responses to stimuli in its environment, the player may see the same storylines again and again, threatening the narrative's believability.
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.3]{Images/PlotVsEmergent.png}
-\caption{Diagram showing the difference in structure between convential plot-based narratives and interactive emergent narratives. The former is static and sequential, whereas the latter is simulation-based and reacts to player interaction. [3]}
-\label{fig:PlotVsEmergent}
-\end{figure}
 
 \subsection{Motivation}
 
@@ -213,7 +214,7 @@ From the outset the player is provided with great freedom, being able to create 
 \caption{Component Specification for Successful Emergent Narrative Systems}
     \begin{tabular}{| c | p{13cm} |}
     \hline
-    Component & Rationale \\ \hline
+    \textbf{Component} & \textbf{Rationale} \\ \hline
     Emotional Personality Model & Emergent systems require a character-focused bottom-up approach to design. Modelling unique personalities and keeping track of emotions allows characters to react differently, yet believably, to each story event. This also includes the social relationships between each character. \\ \hline
     Continuous Planner & Characters need to be able to act on their emotions and react to occuring story events. A planning component allows characters to manage personal goals that they're working towards and construct a series of executable actions to reach that goal. The planner component should also exhibit situated reasoning (allowing characters to react believably to specific events, especially unanticipated ones) and action repair (allowing characters to adapt their plans should they experience action failure) [11]. \\ \hline
     Appraisal & Appraisal is the assessment of any given event in relation to a character's emotions and influences their choice of actions towards their goals (world states they desire). Appraisal is essential for each agent's decision making process. \\ \hline
@@ -239,34 +240,123 @@ For example, players have the choice of upgrading the colony with weapons and de
 
 Colonists have memories and can remember the effects of actions for varied lengths of time. For example, a recently divorced colonist may suffer a mood reduction for several months. Memories can influence the decision making process, allowing disgruntled colonists to react to those that have wronged them. Such reactions depend on the character's personality; for example, a character may choose to violently attack their aggressor with a weapon or simply insult them.
 
+\begin{figure*}[!b]
+\centering
+\includegraphics[scale=0.4]{Images/AgentArchitecture.png}
+\caption{Caption}
+\end{figure*}
+
 \section{Criteria for Successful Systems}
 \noindent By evaluating existing emergent narrative systems and their components it is possible to establish a set of criteria that successful future systems should follow. We propose the component specification shown in \textbf{(Table 1)}.
 
+\section{Design}
+\noindent \textbf{Note:} \textit{the following is a very early prototype design. It has not been fully implemented at this stage and is highly liable to change in the future.}\\
 
-\section{Designing a Hybrid System}
+\newline \noindent Here, we describe a design for an emergent narrative system, heavily influenced by existing systems (namely \textit{FearNot!}) and conforming to our criteria for successful systems. 
+
 \subsection{Agent Architecture}
+\noindent The agent architecture for the proposed system mimics the modular design of the \textit{FAtiMA} architecture [19]. It includes an emotional personality model and continuous planner (as described in the \textit{FearNot!} system design [3]), and is augmented with an autobiographical memory module inspired by Dias et al.'s extension to \textit{FAtiMA} [21]. Every character in the game adopts this design.
+
 \subsubsection{Emotional Personality Model}
-\subsubsection{Continuous Planning}
-\subsection{Goals}
-\subsubsection{Active Pursuit vs. Interest}
-\subsubsection{Managing and Executing Actions}
-\subsubsection{Action Priority Queueing}
-\subsubsection{Need for Asynchronicity}
+\noindent \textbf{Note:} \textit{there have been many personality models proposed in research including the OCC model [25], which is used by \textit{FearNot!} [3] and the OCEAN model [26] which was employed in the creation of ERiSA (Emotionally Realistic Social Agents) [27], a framework for intelligent virtual agents in games, also developed at the University of Nottingham. At the time of writing, a `best' model has yet to be decided. The following text assumes use of the OCC model. [25]}
+
+\textit{Talk about OCC model emotions, threshold values and how these are used to influence appraisal, reactive and rational processing. Memories will also have emotions attached to them. Action effects cause emotions to change}
+
+\subsubsection{Continuous Planner}
+\noindent The continuous planner allows agents to generate "plans", which are a sequence of actions, to accomplish a goal. Actions are author-specified and are atomic, meaning they are irreducable and independent of any other process in the system. This helps keep actions generic and usable by many characters in many situations. Actions can have preconditions including emotional values and/or prerequisite actions that must be completed before the current action can be selected. The action library is the collection of actions unique to a single character.
+
+Goals are generated using knowledge of a character's currently executable actions, their current emotional state, and their stored memories. For example, if a character is angry with another character and recalls a memory of them performing an action they find objectionable, they may generate a goal of starting a fight with them.
+
+A character's plan is maintained until they either achieve their goal, or it is impossible for them to achieve their goal. The planner is designed to be "continuous", meaning that characters constantly observe the story-world state and are able to alter their plans in order to resolve challenges (action repair).
+
+\subsubsection{Appraisal}
+
+
+
+\subsection{Autobiographical Memory}
+\noindent inspired by Dias et al.'s extension to \textit{FAtiMA} [21]
+
+
+
 \subsection{Virtual Director}
+
 \subsubsection{Potential for Genetic Algorithm}
+
+
+
+
 
 \section{Implementation}
 \subsection{Unity}
+
+\noindent The prototype emergent narrative system will be implemented in the Unity game engine and written in C#. Unity was chosen for several reasons:
+\begin{itemize}
+	\item \textbf{Free-to-Use} - Unity Personal edition is free-to-use and includes all the engine’s core features, enough to build the system.
+	\item \textbf{Ease-of-Use} - Unity is designed to be simple and easy to approach. Loading and using graphics, sound and other essential game components is very easy and is abstracted with Unity's simple GUI for the most part. This allows time spent on the project to be focused on the system's implementation.
+	\item \textbf{GPU Programming} - Unity allows developers to write compute shaders: programs that run on the GPU, but outside of the normal graphics pipeline and allow algorithms to be massively parallelised. This is potentially useful for greatly improving the run-time of large calculations (such as running the genetic algorithm's fitness function across the search space).
+\end{itemize}
+
 \subsection{Prototype System}
+
+\noindent So far, the only implemented part of the prototype system is the emotonal personality model for each agent. Currently, emotions are represented by the OCC model [25] which is also used in the \textit{FearNot!} system [3]. Each character's emotional personality model is constructed in an XML file unique to that character and following a standard schema.\\
+
+\newline Work has also begun on constructing the continuous planner, beginning with the creation of a XML schema for generic actions and each character's action library, though this is far from complete at this stage.
+
 \subsection{Tools for Authors}
 
+\noindent A crucial part of the system is the ability for authors to have great control over the creation of unique and varied characters. For this reason, work has also started on a suite of creation tools. Currently, this tool allows authors to specify a list of characters for the system and edit the threshold, decay and initial values for each emotion. When finished, authors can export individual XML files for each character which are easily ``plugged-in'' to the emergent narrative system without any additional work.
+
+\begin{table*}
+\centering
+\caption{Project Gantt Chart - Task Key}
+    \begin{tabular}{| c | p{13cm} |}
+    \hline
+    \textbf{Task ID} & \textbf{Task Description} \\ \hline
+    \cellcolor{green!50}A & Write Proposal \\ \hline
+    \cellcolor{green!50}B & Write Interim Report \\ \hline
+    \cellcolor{green!50}D & Research and evaluate existing games that are products of IS research \\ \hline
+    \cellcolor{green!50}E & Research and evaluate the success of existing IS methods, particularly EN methods \\ \hline
+    \cellcolor{green!50}F & Research ways of creating believable and effective AI agents \\ \hline
+    \cellcolor{orange!50}G & Implement a simple framework for a prototype where different IS methods can be tested \\ \hline
+    \cellcolor{red!50}H & Use the prototype to test existing IS methods and identify their pros and cons \\ \hline
+    \cellcolor{orange!50}I & Develop a novel hybrid approach to IS by combining parts of successful approaches \\ \hline
+    \end{tabular}
+\end{table*}
+\newpage
 \section{Project Progress}
 \subsection{Project Management}
+
+\noindent The Gantt chart \textbf{(Figure 7)} is from the initial proposal for this project. \textbf{Table 2} shows each task with different colours
+defining the amount of progress made toward them:
+\begin{itemize}
+	\item \color{red} \textbf{RED} \color{black} - not completed
+	\item \color{orange} \textbf{AMBER} \color{black} - partially completed
+	\item \color{green} \textbf{GREEN} \color{black} - completed
+\end{itemize}
+
+\newline The project is running slightly behind schedule, with 2 tasks partially completed, and 1 not started:
+\begin{itemize}
+	\item \textbf{Task G} - work has started on implementing the prototype framework but it is not complete yet (see \textbf{Implementation} section).
+	\item \textbf{Task H} - because the prototype framework has not been fully implemented, the testing of existing IS methods has not been conducted yet.
+	\item \textbf{Task I} - task I was not supposed to be started until after the interim report was submitted. However, as the research from tasks D-F has been so successful, a design for a novel system has been proposed in this report. 
+\end{itemize}
+
 \subsection{Contributions and Reflections}
-\subsection{Moving Forward}
 
-\addcontentsline{toc}{section}{References}
+I believe the slight delay in project progress is a result of the learning process. Some of the more complex concepts in this project (modelling virtual intelligent agents and understanding how the multitude of existing systems worked) were difficult to grasp initially. 
 
+I spent a long time researching existing systems and ensuring that I fully understood how they worked before I could write this report. Despite this issue, I believe I have managed my time well; the proposed criteria for creating successful systems \textbf{(Table 1)} is the output of extensive research into the field, and the high-level design for the new system promises several extensions to that research (namely the autobiographical memory module and the genetic algorithm approach for building the virtual director). \\
+
+\newline At this time, I believe all the project objectives can be completed on time and I am looking forward to implementing the system design specified in this document and conducting user testing. I believe the most novel part of the project is the virtual director. Genetic algorithms are not prolific in the field of interactive storytelling and it will be interesting to discover how suitable they are for generating effective narratives. My initial task schedule will not be changed at this time. The upcoming Christmas break will give me plenty of time to further implement the prototype and hopefully the system will be near finished and ready for user-testing by the new year.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.33]{Images/gantt.png}
+\caption{Gantt chart}
+\label{fig:Gantt}
+\end{figure}
+
+\clearpage
 \begin{thebibliography}{20}
 
 \bibitem{Bostan and Marsh}
@@ -352,35 +442,51 @@ Tynan Sylvester: RimWorld. Ludeon Studios (2018), available at: https://rimworld
 Adams, T., Adams, Z.: Slaves to Armok: God of Blood Chapter II: Dwarf Fortress (2006)
 
 \bibitem{FAtiMA}
-Dias, J., Macscarenhas, S., \& Paiva, A. (2014)
+Dias, J., Macscarenhas, S., \& Paiva, A. (2014).
 ``FAtiMA Modular: Towards an Agent Architecture with
 a Generic Appraisal Framework''.
 \textit{Emotion Modeling} pp.44-56
 
 \bibitem{Emotional Agents}
-Dias, J., \& Paiva, A. (2005)
+Dias, J., \& Paiva, A. (2005).
 ``Feeling and Reasoning: A Computational Model for Emotional Agents''.
 \textit{In: Proceedings of 12th Portuguese Conference on Artificial Intelligence, EPIA 2005,} pp.127-140
 
 \bibitem{FAtiMA with Memory}
-Dias, J., W. C. Ho., Vogt, T., Beeckman, N., Paiva1, A., \& Andre, E. (2007)
+Dias, J., W. C. Ho., Vogt, T., Beeckman, N., Paiva1, A., \& Andre, E. (2007).
 "I Know What I Did Last Summer: Autobiographic Memory in Synthetic Characters".
 \textit{Affective Computing and Intelligent Interaction: Second International Conference, ACII 2007 Lisbon, Portugal, September 12-14, 2007 Proceedings} pp.606-617
 
 \bibitem{Autobiographical Memory}
-Ho, W.C. \& Watson, S. (2006) 
+Ho, W.C. \& Watson, S. (2006).
 "Autobiographic Knowledge for Believable Virtual Characters".
-\textit{In: Proceedings of Intelligent Virtual Agents 2006 (IVA 2006)} pp.383-394
+\textit{In: Proceedings of the 6th International Conference on Intelligent Virtual Agents (IVA 2006)} pp.383-394
 
 \bibitem{Virtual Theatre}
-Hayes-Roth, B., Brownston, L., \& Sincoff, E. (1995)
+Hayes-Roth, B., Brownston, L., \& Sincoff, E. (1995).
 "Directed Improvisation by Computer Characters".
 \textit{Technical Report KSL 95-04, Knowledge Systems Laboratory, Stanford University, 1995}
 
 \bibitem{Improv System}
-Perlin, K., \& Goldberg, A.
+Perlin, K., \& Goldberg, A. (1996).
 "Improv: A System for Scripting Interactive Actors in Virtual Worlds".
-\textit{In: Proceedings of the 23rd Annual Conference on Computer Graphics and Interactive Techniques (SIGGRAPH '96) pp.205-216 }
+\textit{In: Proceedings of the 23rd Annual Conference on Computer Graphics and Interactive Techniques (SIGGRAPH '96)} pp.205-216
+
+\bibitem{OCC Model}
+Ortony, A., Clore, G.L., \& Collins, A. (1988).
+"The Cognitive Structure of Emotions"
+\textit{New York, NY, US: Cambridge University Press}
+
+\bibitem{OCEAN Model}
+Saucier, G., \& Goldberg, L.R. (1996).
+"The Language of Personality: Lexical Perspectives on the Five-Factor Model".
+\textit{In: The Five-Factor Model of Personality:
+Theoretical Perspectives} pp.21-50
+
+\bibitem{ERiSA}
+Chowanda, A., Blanchfield, P., Flintham, M., \& Valstar, M. (2014). 
+"ERISA: Building Emotional Realistic Social Game Agent-Companions"
+\textit{In: Proceedings of the 14th International Conference on Intelligent Virtual Agents (IVA 2014)} pp.134-143 
 
 
 
