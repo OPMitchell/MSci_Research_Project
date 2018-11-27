@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  26 NOV 2018 21:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.23)  27 NOV 2018 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,20 +392,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
  []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 \newline
-               ENs benefit from having no rigid structure to their story bec...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Overfull \hbox (5.45229pt too wide) in paragraph at lines 141--142
 \T1/aer/m/n/9 sys-tems de-vel-oped both in re-search and for com-mer-cial games
 .
@@ -415,20 +401,6 @@ Overfull \hbox (5.45229pt too wide) in paragraph at lines 141--142
 Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 \newline
-               Despite producing compelling emergent narratives, none of the...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
@@ -462,20 +434,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
  []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.174 \newline
-               An extension of the CiF system [14] was proposed by Guimaraes...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Overfull \hbox (2.62529pt too wide) in paragraph at lines 176--176
 []\subsecfnt Modelling Emo-tional Be-haviour - FearNot! ap-
  []
@@ -486,41 +444,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--178
  []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 \newline
-               \textit{FearNot!} takes a focus on character-based emergent n...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 
 Underfull \vbox (badness 1558) has occurred while \output is active []
-
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 \newline
-               \textit{FearNot!} uses an affective agent architecture dubbed...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
@@ -533,41 +462,12 @@ File: Images/FearNot.png Graphic file (type png)
 Package pdftex.def Info: Images/FearNot.png used on input line 185.
 (pdftex.def)             Requested size: 239.54027pt x 94.95288pt.
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 \newline
-               Emotions are a crucial aspect of the agent architecture and i...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Underfull \vbox (badness 2426) has occurred while \output is active []
 
  [4 <./Images/FearNot.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 \newline
-               Due to \textit{FAtiMA}'s flexibility and modularity, some ext...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 Overfull \hbox (4.82217pt too wide) in paragraph at lines 195--195
@@ -591,38 +491,9 @@ File: Images/sims.png Graphic file (type png)
 Package pdftex.def Info: Images/sims.png used on input line 204.
 (pdftex.def)             Requested size: 222.55048pt x 166.56468pt.
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.208 \newline
-               \textit{The Sims} includes the simulation of personalities, e...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.210 \newline
-               Despite the high level of freedom given to the player, a seri...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 Overfull \hbox (7.10854pt too wide) in paragraph at lines 215--224
@@ -645,20 +516,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.239 \newline
-               \textit{RimWorld} includes a sophisticated social simulation ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 <Images/AgentArchitecture.png, id=35, 1053.9375pt x 804.00375pt>
 File: Images/AgentArchitecture.png Graphic file (type png)
 
@@ -671,106 +528,98 @@ Overfull \hbox (7.19598pt too wide) in paragraph at lines 249--249
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+[6 <./Images/rimworld.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.255 \newline
-               \noindent Here, we describe a design for an emergent narrativ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[6 <./Images/rimworld.png>] [7 <./Images/AgentArchitecture.png>]
-! You can't use `macro parameter character #' in horizontal mode.
-l.292 ...n the Unity game engine and written in C#
-                                                  . Unity was chosen for sev...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+ []
 
 
-Overfull \hbox (1.8617pt too wide) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+[7 <./Images/AgentArchitecture.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+<Images/GeneticDirector.png, id=45, 745.78625pt x 282.05376pt>
+File: Images/GeneticDirector.png Graphic file (type png)
+
+<use Images/GeneticDirector.png>
+Package pdftex.def Info: Images/GeneticDirector.png used on input line 314.
+(pdftex.def)             Requested size: 246.11023pt x 93.07802pt.
+
+Overfull \hbox (6.11023pt too wide) in paragraph at lines 314--315
+ [][] 
+ []
+
+
+Overfull \hbox (5.05615pt too wide) in paragraph at lines 320--321
+\T1/aer/m/n/9 main-tains gen-eral story-world knowl-edge about the plot struc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+
+Overfull \hbox (1.86151pt too wide) in paragraph at lines 328--329
+[]\T1/aer/m/n/9 Genetic al-go-rithms are a sub-set of evo-lu-tion-ary al-go-rit
+hms,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+
+ []
+
+[8 <./Images/GeneticDirector.png>]
+Overfull \hbox (1.8617pt too wide) in paragraph at lines 339--340
 \T1/aer/m/n/9 write com-pute shaders: pro-grams that run on the GPU,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.303 \newline
-               Work has also begun on constructing the continuous planner, b...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.337 \newline
-               The project is running slightly behind schedule, with 2 tasks...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.350 \newline
-               At this time, I believe all the project objectives can be com...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<Images/gantt.png, id=45, 657.45625pt x 355.3275pt>
+[9] <Images/gantt.png, id=54, 657.45625pt x 355.3275pt>
 File: Images/gantt.png Graphic file (type png)
  <use Images/gantt.png>
-Package pdftex.def Info: Images/gantt.png used on input line 354.
+Package pdftex.def Info: Images/gantt.png used on input line 380.
 (pdftex.def)             Requested size: 216.96123pt x 117.25842pt.
 
-[8] [9
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- <./Images/gantt.png>] [10
+ [10 <./Images/gantt.png>] [11
 
 ] (./Interim.aux) ) 
 Here is how much of TeX's memory you used:
- 3851 strings out of 493029
- 49152 string characters out of 6136233
- 131854 words of memory out of 5000000
- 7250 multiletter control sequences out of 15000+600000
+ 3857 strings out of 493029
+ 49329 string characters out of 6136233
+ 131858 words of memory out of 5000000
+ 7255 multiletter control sequences out of 15000+600000
  60548 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,35p,1679b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -787,10 +636,10 @@ uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on Interim.pdf (10 pages, 736097 bytes).
+Output written on Interim.pdf (11 pages, 755365 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
