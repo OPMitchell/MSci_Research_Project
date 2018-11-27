@@ -125,7 +125,7 @@ It is common for narrative design in computer games to follow a plot-based appro
 
 \subsection{Emergent Narrative}
 
-Aylett proposed Emergent Narratives (EN) as an alternative. ENs are an approach to interactive story design where, instead of a static authored plot, the ``narrative weight of the application is shared by authors and players.'' [3][5][6]. This is typically achieved by simulating a virtual world, including characters with different behaviours, personalities and goals created by the author. The storyline then `emerges' at run-time from the interactions between these autonomous agents and the player [2]. The advantage of an EN approach is a non-linear narrative \textbf{(Figure 1)} that allows for a greater level of player interactivity. Despite this, ENs are unpredictable at authoring time. Kriegel and Aylett explain how authors are forced to ``let go of specific story lines altogether and ... focus on creating the elements from which the story will emerge.'' [7]. ENs work as a sort of `sandbox' where the author defines the limits of the story world and creates the characters and behaviours that fill it, then leaves the simulation to create its own story, providing no further input during run-time. As a result, authors of ENs will find it very difficult to ensure the story includes specific plot points. \\
+Aylett proposed Emergent Narratives (EN) as an alternative. ENs are an approach to interactive story design where, instead of a static authored plot, the ``narrative weight of the application is shared by authors and players.'' [3][5][6]. This is typically achieved by simulating a virtual world, including characters with different behaviours, personalities and goals created by the author. The storyline then `emerges' at run-time from the interactions between these autonomous agents and the player [2]. The advantage of an EN approach is a non-linear narrative that allows for a greater level of player interactivity \textbf{(Figure 1)}. Despite this, ENs are unpredictable at authoring time. Kriegel and Aylett explain how authors are forced to ``let go of specific story lines altogether and ... focus on creating the elements from which the story will emerge.'' [7]. ENs work as a sort of `sandbox' where the author defines the limits of the story world and creates the characters and behaviours that fill it, then leaves the simulation to create its own story, providing no further input during run-time. As a result, authors of ENs will find it very difficult to ensure the story includes specific plot points. \\
 
 ENs benefit from having no rigid structure to their story because there is no branching tree restricting the range of storylines. This solves the problem of infeasible exponential growth because there are no branches to manage and the storyline emerges on its own. This allows for a potentially inumerable amount of emergent storylines (should the simulation be complex enough).
 
@@ -133,7 +133,7 @@ Despite this, a disadvantage of emergent narratives are their reliance on well i
 
 \subsection{Motivation}
 
-\noindent The motivation for this project is to develop a new approach to interactive storytelling which utilises and combines components of successful, existing emergent narrative systems in order to generate compelling stories and give players a greater sense of agency. It is also crucial to provide adequate control of the narrative to authors. This will be achieved through a suite of story creation tools which allow authors to define characters personalites, goals and actions in detail. This paper focuses on simulation-based approaches which exploit the usefulness of emergent narratives and omit the restrictions of plot-based designs.
+\noindent The motivation for this project is to develop a new approach to interactive storytelling which utilises and combines components of successful existing emergent narrative systems in order to generate compelling stories and give players a greater sense of agency. It is also crucial to provide adequate control of the narrative to authors. This will be achieved through a suite of story creation tools which allow authors to define characters personalites, goals and actions in detail. This paper focuses on simulation-based approaches which exploit the usefulness of emergent narratives and omit the restrictions of plot-based designs.
 
 \section{Related Work}
 \subsection{History of Digital Storytelling}
@@ -152,14 +152,14 @@ The solution is to build the narrative from the bottom-up through the interactio
 
 \subsubsection{Automated Planning with HTNs}
 
-Cavazza et al. produced a prototype character-based system which focused on defining the possible actions of individual characters in hierarchical task networks (HTN) in order to create automated plans and achieve character desired goals [11]. Characters act autonomously, executing available actions in their HTN in order to reach their goal, similar to the \textit{TaleSpin} system's character plans [9].  Each action is categorised and used to determine other characters' reactions (e.g. characters will react negatively to ``rude'' actions). The system also includes ``mood values'' for each character which can affect other characters' plans. Because the system allows for emergent behaviour, unexpected situations may arise that are unaccounted for in a character's plans. This creates the need for ``situated reasoning'' and ``action repair''. Cavazza et al. explain that situated reasoning ``originates from the discrepancy between an agent's expectations and action preconditions'' and is focused on the character aiming to achieve a specific result in a given situation, or avoiding an undesirable result. Typically, this is seen when a character's current plan is interrupted and they must deal with a specific unanticipated situation. Action repair is focused on recovering from action failure, when external factors threaten the satisfaction of executability conditions. This system is primarily plan focused and authoring constitutes describing the sub-tasks in each character's hierarchical task network, and the character's reactions to ``various generic situations, mostly arising
+Cavazza et al. produced a prototype character-based system which focused on defining the possible actions of individual characters in hierarchical task networks (HTN) in order to create automated plans and achieve character desired goals [11]. Characters act autonomously, executing available actions in their HTN in order to reach their goal, similar to the \textit{TaleSpin} system's character plans [9].  Each action is categorised and used to determine other characters' reactions (e.g. characters will react negatively to ``rude'' actions). The system also includes ``mood values'' for each character which can affect other characters' plans. Because the system allows for emergent behaviour, unexpected situations may arise that are unaccounted for in a character's plans. This creates the need for ``situated reasoning'' and ``action repair''. Cavazza et al. explain that situated reasoning ``originates from the discrepancy between an agent's expectations and action preconditions'' and is focused on the character aiming to achieve a specific result in a given situation or avoiding an undesirable result. Typically, this is seen when a character's current plan is interrupted and they must deal with a specific unanticipated situation. Action repair is focused on recovering from action failure, when external factors threaten the satisfaction of executability conditions. This system is primarily plan focused and authoring constitutes describing the sub-tasks in each character's hierarchical task network, and the character's reactions to ``various generic situations, mostly arising
 from the conjunction of actions from the characters'
 respective plans'' [11].\\ 
 
 \subsubsection{Modelling Social Interaction: Prom Week}
 
 McCoy et al. produced \textit{Prom Week} [12], a game described as a ``social physics'' simulator which utilises a bespoke AI system: \textit{Comme il Faut} (CiF) [13]. The goal of the project was to design a game that could provide ``satisfying stories that reflect player choices in a wide possibility space'' [12].
-As the title suggests, \textit{Prom Week} revolves around the social lives of a group of teenagers the week before their prom night. The player is given a set of goals which they must complete within the week, for example; finding a date to attend the prom with. McCoy et al.'s goal was to decrease the volume of explicitly authored story space whilst increasing the amount explorable by the player. They reasoned the best approach was to build ``a social artificial intelligence (AI) system that computationally models social space and social interaction'', instead of having the author explicitly detail each possible interaction (a burdensome and effectively intractable task should the number of interactions be large enough). With their proposed AI system (CiF), the author provides ``reusable and recombinable representations of social norms and social interactions'' (or social rules) for autonomous agents in the model [13]. The social state existing across these agents is modified by multi-character social interactions, or social exchanges that utilise these representations. In effect, autonomous agents (the characters) perceive the global social state and attempt to alter it to accomplish their own social goals. This is achieved through social interactions, all of which follow the author-specified rules.\\
+As the title suggests, \textit{Prom Week} revolves around the social lives of a group of teenagers the week before their prom night. The player is given a set of goals which they must complete within the week, for example: finding a date to attend the prom with. McCoy et al.'s goal was to decrease the volume of explicitly authored story space whilst increasing the amount explorable by the player. They reasoned the best approach was to build ``a social artificial intelligence (AI) system that computationally models social space and social interaction'', instead of having the author explicitly detail each possible interaction (a burdensome and effectively intractable task should the number of interactions be large enough). With their proposed AI system (CiF), the author provides ``reusable and recombinable representations of social norms and social interactions'' (or social rules) for autonomous agents in the model [13]. The social state existing across these agents is modified by multi-character social interactions, or social exchanges that utilise these representations. In effect, autonomous agents (the characters) perceive the global social state and attempt to alter it to accomplish their own social goals. This is achieved through social interactions, all of which follow the author-specified rules.\\
 
 \begin{figure}
 \centering
@@ -174,7 +174,7 @@ The CiF system itself does not attempt to model the entire story world. It is a 
 An extension of the CiF system [14] was proposed by Guimaraes et al. that adapted the social physics simulator to a first-person perspective, implemented as a publicly downloadable modification in the \textit{Elder Scrolls V: Skyrim} game engine. The results saw an extended interaction space for in-game NPCs leading to more believable characters and an improved player experience, as confirmed by the modification's popularity [15] and the results of user testing.
 
 \subsubsection{Modelling Emotional Behaviour - FearNot! application and FAtiMA agent architecture}
-Louchart et al. produced The \textit{FearNot!} (Fun with Empathic Agents Reaching Novel Outcomes in Teaching!) storytelling system, designed for anti-bullying education and inspired by Forum Theatre [3]. \textit{FearNot!} generates short episodes where a character is bullied and the victim asks the player for advice. The player's advice has an impact on the victim's emotional state which in turn influences the actions of that character in the next episode \textbf{(Figure 3)}. Each character is represented by an intelligent agent architecture which includes an ``affective appraisal system and autonomous action selection capabilities'' [3]. In addition to the character agents, an additional story facilitator agent is used for selecting characters, props, and locations for successive episodes. The story facilitator takes the player's actions and the characters' emotional state into consideration, generating an unscripted episode which is logically coherent to previously transpired events. For example, if the player ``has advised the character to hit back, it may set up an episode where victim and bully confront each other directly'' [3]. The story facilitator is comparable to \textit{Virtual Storyteller}'s ``virtual director'' [10] which stores global story data and uses it to influence and adapt the narrative. However, \textit{FearNot!}'s director does not perform global agent control and thus each agent remains fully autonomous. Rather than influencing characters directly, the director appraises past episodes and the current state of the story world and uses this data to generate logically cohesive succesive content.\\
+Louchart et al. produced The \textit{FearNot!} (Fun with Empathic Agents Reaching Novel Outcomes in Teaching!) storytelling system, designed for anti-bullying education and inspired by Forum Theatre [3]. \textit{FearNot!} generates short episodes where a character is bullied and the victim asks the player for advice. The player's advice has an impact on the victim's emotional state which in turn influences the actions of that character in the next episode \textbf{(Figure 3)}. Each character is represented by an intelligent agent architecture which includes an ``affective appraisal system and autonomous action selection capabilities'' [3]. In addition to the character agents, an additional story facilitator agent is used for selecting characters, props, and locations for successive episodes. The story facilitator takes the player's actions and the characters' emotional state into consideration, generating an unscripted episode which is logically coherent to previously transpired events. For example, if the player ``has advised the character to hit back, it may set up an episode where victim and bully confront each other directly'' [3]. The story facilitator is comparable to \textit{Virtual Storyteller}'s ``virtual director'' [10] which stores global story data and uses it to influence and adapt the narrative. However, \textit{FearNot!}'s director does not perform global agent control and thus each agent remains fully autonomous. Rather than influencing characters directly, the director appraises past episodes and the current state of the story world and uses this data to generate logically cohesive, succesive content.\\
 
 \textit{FearNot!} takes a focus on character-based emergent narratives which Louchart et al. explain requires a "bottom-up approach in which story elements are synthesised in real time via character interaction" [3]. This contrasts branching plot-based narratives which are created top-down with the story being comprised of fixed plot elements. In \textit{FearNot!'s} approach, characters are defined by their emotions, personalities, action tendencies, goals and emotional reactions. This is `organic' because characters will only perform actions in-character, according to their own personality and desires, rather than requiring global action management. From the author's point of view, developing a character requires the static checking of character actions (e.g. making sure all actions have reachable preconditions) and the simulation of interaction in various contexts to confirm that the character acts in-line with the author's vision.\\
 
@@ -186,7 +186,7 @@ Louchart et al. produced The \textit{FearNot!} (Fun with Empathic Agents Reachin
 \caption{A screenshot of the \textit{FearNot!} system showing a scenario where a child is being bullied and asks the player for advice. [3]}
 \end{figure}
 
-Emotions are a crucial aspect of the agent architecture and influence each character's planning process. Emotional values can be used as pre-conditions for potential actions. The use of emotional values (amongst other data such as memories and social relations) can be used by agents to perform rational processing to intelligently select actions that will help them towards their goal. However, \textit{FAtiMA} also incorporates non-cognitive reactional processing: "spontaneous reactions triggered by intense emotions [and] not part of the planning process" [3]. With this feature, characters with extreme emotional states can react with appropriate actions; for example, a character with extremely negative emotions may spontanenously burst out crying. This is an attempt to allow characters to react entirely emotionally to certain situations, rather than cognitively, and adds an extra layer of believability.
+Emotions are a crucial aspect of the agent architecture and influence each character's planning process. Emotional values can be used as pre-conditions for potential actions. The use of emotional values (amongst other data such as memories and social relations) can be used by agents to perform rational processing to intelligently select actions that will help them towards their goal. However, \textit{FAtiMA} also incorporates non-cognitive `reactive' processing which involves ``spontaneous reactions triggered by intense emotions [and is] not part of the planning process'' [3]. With this feature, characters with extreme emotional states can react with appropriate actions; for example, a character with extremely negative emotions may spontanenously burst out crying. This is an attempt to allow characters to react entirely emotionally to certain situations, rather than cognitively, and adds an extra layer of believability.
 
 \textit{FAtiMA}'s planning system requires actions to be defined with preconditions (such as ranges of emotional values or certain event preconditions) and effects (the outcome of the action). Characters use actions to react to stimuli (other character's actions) or to help them achieve their goals. Goals can be defined as active pursuits or interests. Active pursuit goals are defined as world states which a character strives to attain whereas interest goals are world states that the character wants to maintain. Interest goals can help characters choose certain actions over others because actions which modify desired world states are considered undesirable [3].\\
 
@@ -207,7 +207,7 @@ From the outset the player is provided with great freedom, being able to create 
 
 \textit{The Sims} includes the simulation of personalities, emotions, needs, and social traits, not dissimilar to \textit{Prom Week}'s social AI system or the \textit{FAtiMA} agent architecture's emotional personality model. Characters can also have immediate responses to emotional state, alike the \textit{FearNot!} system's action tendencies. For example, if a character's mood is low enough they will ignore the player's actions in order to satisfy their own needs and improve their mood first.\\
 
-Despite the high level of freedom given to the player, a serious limitation of \textit{The Sims}' narrative generation is the fact that the quality of the story relies entirely on the player's choice of interesting actions. Should they desire, the player could allow their avatar to live in complete isolation and only watch TV all day, thus resulting in a lack of narrative entirely. There is no guarantee that engaging high-quality narratives will be produced because the player acts autocratically as spectator and director.
+Despite the high level of freedom given to the player, a serious limitation of \textit{The Sims}' narrative generation is the fact that the quality of the story relies entirely on the player's choice of interesting actions. Should they desire, the player could allow their avatar to live in complete isolation and only watch TV all day, thus resulting in a lack of narrative entirely. There is no guarantee that engaging, high-quality narratives will be produced because the player acts autocratically as spectator and director.
 
 \begin{table*}[!b]
 \centering
@@ -218,10 +218,10 @@ Despite the high level of freedom given to the player, a serious limitation of \
     Emotional Personality Model & Emergent systems require a character-focused bottom-up approach to design. Modelling unique personalities and keeping track of emotions allows characters to react differently, yet believably, to each story event. This also includes the social relationships between each character. \\ \hline
     Continuous Planner & Characters need to be able to act on their emotions and react to occuring story events. A planning component allows characters to manage personal goals that they're working towards and construct a series of executable actions to reach that goal. The planner component should also exhibit situated reasoning (allowing characters to react believably to specific events, especially unanticipated ones) and action repair (allowing characters to adapt their plans should they experience action failure) [11]. \\ \hline
     Appraisal & Appraisal is the assessment of any given event in relation to a character's emotions and influences their choice of actions towards their goals (world states they desire). Appraisal is essential for each agent's decision making process. \\ \hline
-    Memory / Knowledge Base & Characters need some way of remembering events that have transpired in the story. Memories of the positive and negative actions they have experienced should influence a character's decision making process. This could be a single global knowledge base that all agents can refer to (such as the \textit{Comme il Faut} system's global rulebase [13]), or encapsulated inside the agent architecture itself [21]. The former assumes perfect knowledge of the storyworld for each character, but the latter allows each character to have varying amounts of knowledge. \\ \hline
+    Memory / Knowledge Base & Characters need some way of remembering events that have transpired in the story. Memories of the positive and negative actions they have experienced should influence a character's decision making process. This could be a single global knowledge base that all agents can refer to (such as the \textit{Comme il Faut} system's global rulebase [13]) or encapsulated inside the agent architecture itself [21]. The former assumes perfect knowledge of the storyworld for each character but the latter allows each character to have varying amounts of knowledge. \\ \hline
     (Optional) Virtual Director & Many systems use some form of virtual director; a seperate agent that uses general story-world knowledge about the plot structure to adapt and improve the story [3][10][17]. This shouldn't be used to perform global action control for individual agents (removing full agent autonomy), rather to facilitate the generation of interesting cohesive content (as in \textit{FearNot!} [3]) or to constantly analyse the state of the storyworld and create appropriate story events that challenge the player (as in Rimworld [17]). \\ \hline
     \end{tabular}
-\end{table*}[!b]
+\end{table*}
 
 \subsubsection{RimWorld}
 \textit{RimWorld} [17] is a ``colony simulator'' game that was inspired by the highly realistic simulation-based approach to game design pioneered by \textit{Dwarf Fortress} [18], a sandbox game which sees the player manage the livelihood of a group of dwarves.
@@ -231,19 +231,19 @@ Despite the high level of freedom given to the player, a serious limitation of \
 \begin{figure}
 \centering
 \includegraphics[scale=0.68]{Images/rimworld.png}
-\caption{A screenshot of \textit{RimWorld} showing a comparison of the relationships between two characters. Recent events and their related numerical mood effects are shown. [17]}
+\caption{A screenshot of \textit{RimWorld} showing a comparison of the relationships between two characters. Recent events and their related quantitative mood effects are shown. [17]}
 \end{figure}
 
 For example, players have the choice of upgrading the colony with weapons and defences to protect characters from periodic waves of attackers. The AI storyteller can evaluate the colony's level of defense and ensure that the next wave of attackers is strong enough to prove challenging to the player and therefore exciting enough to produce a ``good'' narrative.\\
 
-\textit{RimWorld} includes a sophisticated social simulation inspired by \textit{The Sims}. Colonists have traits which help them react in unique ways to social interactions (e.g. ``Night-Owl'' colonists have a better mood if they're up at night and ``Greedy'' colonists have a mood loss if their bedrooms aren't impressive) and emotions which change according to various stimuli \textbf{(Figure 5)}. Similar to the \textit{FearNot!} system [3], the state of these emotions determine which actions a character will take. Colonists can also reactively process emotions, identical to \textit{FearNot!}'s action tendencies. This manifests as a ``mental break'' where extreme mood values cause colonists to disregard player instructions entirely and engage in fully autonomous, usually obstructive, behaviour. For example, if a colonist's mood is low enough they may engage in an uncontrollable psychotic episode of pyromancy, igniting the colony's buildings.
+\textit{RimWorld} includes a sophisticated social simulation inspired by \textit{The Sims}. Colonists have traits which help them react in unique ways to social interactions (e.g. ``Night-Owl'' colonists have a better mood if they're up at night and ``Greedy'' colonists have a mood loss if their bedrooms aren't impressive) and emotions which change according to various stimuli \textbf{(Figure 5)}. Similar to the \textit{FearNot!} system [3], the state of these emotions determines which actions a character will take. Colonists can also reactively process emotions, identical to \textit{FearNot!}'s action tendencies. This manifests as a ``mental break'' where extreme mood values cause colonists to disregard player instructions entirely and engage in fully autonomous, usually obstructive, behaviour. For example, if a colonist's mood is low enough they may engage in an uncontrollable psychotic episode of pyromancy, igniting the colony's buildings.
 
 Colonists have memories and can remember the effects of actions for varied lengths of time. For example, a recently divorced colonist may suffer a mood reduction for several months. Memories can influence the decision making process, allowing disgruntled colonists to react to those that have wronged them. Such reactions depend on the character's personality; for example, a character may choose to violently attack their aggressor with a weapon or simply insult them.
 
 \begin{figure*}[!b]
 \centering
 \includegraphics[scale=0.4]{Images/AgentArchitecture.png}
-\caption{Caption}
+\caption{Agent architecture for the proposed system}
 \end{figure*}
 
 \section{Criteria for Successful Systems}
@@ -256,30 +256,31 @@ These are intended as a set of guidelines, describing what components an emergen
 \section{Design}
 \noindent \textbf{Note:} \textit{the following is a very early prototype design. It has not been fully implemented at this stage and is highly liable to change in the future.}\\
 
-\noindent Here, we describe a design for an emergent narrative system, heavily influenced by existing systems (particularly \textit{FearNot!}) and conforming to our criteria for successful systems. 
+\noindent Here, we describe a design for an emergent narrative system, heavily influenced by existing systems (particularly \textit{FearNot!}) and conforming to our criteria for successful systems \textbf{(Table 1)}. 
 
 \subsection{Agent Architecture}
-\noindent The agent architecture for the proposed system mimics the modular design of the \textit{FAtiMA} architecture [19]. It includes an emotional personality model and continuous planner (as described in the \textit{FearNot!} system design [3]), and is augmented with an autobiographical memory module inspired by Dias et al.'s extension to \textit{FAtiMA} [21] but using an alternate method [28] that was researched and implemented successfully with non-playable characters in \textit{Minecraft}. Every character in the game adopts this design.
+\noindent The agent architecture for the proposed system mimics the modular design of the \textit{FAtiMA} architecture [19]. It includes an emotional personality model and continuous planner (as described in the \textit{FearNot!} system design [3]), and is augmented with an autobiographical memory module inspired by Dias et al.'s extension to \textit{FAtiMA} [21] but using an alternate method [28] that was researched and implemented successfully with non-playable characters in \textit{Minecraft}. Every character in the game adopts this design \textbf{(Figure 6)}.
 
-\subsubsection{Emotional Personality Model} There have been many personality models proposed in research including the OCC model [25], which is used by \textit{FearNot!} [3] and the OCEAN model [26] which was employed in the creation of ERiSA (Emotionally Realistic Social Agents) [27], a framework for intelligent virtual agents in games, also developed at the University of Nottingham. At the time of writing, a `best' model has yet to be decided. The following text assumes use of the OCC model. [25]\\
+\subsubsection{Emotional Personality Model} 
+\noindent There have been many personality models proposed in research including the OCC model [25], which is used by \textit{FearNot!} [3] and the OCEAN model [26] which was employed in the creation of ERiSA (Emotionally Realistic Social Agents) [27], a framework for intelligent virtual agents in games, also developed at the University of Nottingham. At the time of writing, a `best' model has yet to be decided. The following text assumes use of the OCC model. [25]\\
 
-The design for the emotional personality model is very similar to the \textit{FearNot!} system [3] and utilises the OCC model [25] which "defines 22 emotions through a set of rules: for example a character will be happy-for another  character if an event occurs which is congruent with the second character’s goals and the second character is liked by the first character." [3].
+The design for the emotional personality model is very similar to the \textit{FearNot!} system [3] and utilises the OCC model [25] which ``defines 22 emotions through a set of rules: for example a character will be happy-for another  character if an event occurs which is congruent with the second character's goals and the second character is liked by the first character.'' [3].
 
 Just like \textit{FearNot!} the proposed system utilises appraisal rules called ``emotional reactions'' which allow a character's emotion values to be changed as a result of experienced events. Non-cognitive reactive processing is applied through the use of ``action tendencies'' which are ``impulsive actions caused by certain events and emotions.''\\
 
 \subsubsection{Continuous Planner}
-\noindent The continuous planner allows agents to generate "plans", which are a sequence of actions, to accomplish a goal. Actions are author-specified and are atomic, meaning they are irreducable and independent of any other process in the system. This helps keep actions generic and usable by many characters in many situations. Actions can have preconditions including emotional values and/or prerequisite actions that must be completed before the current action can be selected. The action library is the collection of actions unique to a single character.\\
+\noindent The continuous planner allows agents to generate ``plans'', which are a sequence of actions, to accomplish a goal. Actions are author-specified and are atomic, meaning they are irreducable and independent of any other process in the system. This helps keep actions generic and usable by many characters in many situations. Actions can have preconditions including emotional values and/or prerequisite actions that must be completed before it can be selected. The action library is a collection of actions unique to a single character.\\
 
-Goals are generated using knowledge of a character's currently executable actions, their current emotional state, and their stored memories. For example, if a character is angry with another character and recalls a memory of them performing an action they find objectionable, they may generate a goal of starting a fight with them.
+\noindent Goals are generated using knowledge of a character's currently executable actions, their current emotional state, and their stored memories. For example, if a character is angry with another character and recalls a memory of them performing an action they find objectionable, they may generate a goal of starting a fight with them.
 
-A character's plan is maintained until they either achieve their goal, or it is impossible for them to achieve their goal. The planner is designed to be "continuous", meaning that characters constantly observe the story-world state and are able to alter their plans in order to resolve challenges (action repair).
+A character's plan is maintained until they either achieve their goal, or it is impossible for them to achieve their goal. The planner is designed to be ``continuous'' meaning that characters constantly observe the story-world state and are able to alter their plans in order to resolve challenges (action repair).
 
 \subsubsection{Appraisal}
 
-Appraisal is the assessment of any given event in relation to a character's emotions and influences their choice of actions towards their goals (world states they desire). When a character experiences a new event they must first appraise it before deciding on a response, if any. The appraisal process can be split into 4 steps:
+\noindent Appraisal is the assessment of any given event in relation to a character's emotions and influences their choice of actions towards their goals (world states they desire). When a character experiences a new event they must first appraise it before deciding on a response, if any. The appraisal process can be split into 4 steps:
 \begin{enumerate}
-	\item \textbf{Emotional Reaction} - firstly, the character's emotional state is updated. Each event has an emotional intensity value associated with it, however, the actual amount of change for a specific emotion is dependent on each character's threshold value for that emotion. This step represents the initial reactive "emotion reaction" that someone would have to an action, before they've decided to respond.
-	\item \textbf{Reactive Processing} - secondly, the character's action tendencies are evaluated to see if any of them have been triggered by the new event. Action tendencies are the physical manifestations of reactive processing and represent non-cognitive reactions that a character expresses before taking their goals into consideration (e.g. crying, screaming, laughing, etc.).
+	\item \textbf{Emotional Reaction} - firstly, the character's emotional state is updated. Each event has an emotional intensity value associated with it, however, the actual amount of change for a specific emotion is dependent on each character's threshold value for that emotion. This step represents the initial reactive ``emotional reaction'' that someone would have to an action, before they've decided to respond.
+	\item \textbf{Reactive Processing} - secondly, the character's action tendencies are evaluated to see if any of them have been triggered by the new event. Action tendencies are the physical manifestations of reactive processing and represent non-cognitive, impulsive actions that a character expresses before taking their goals into consideration (e.g. crying, screaming, laughing, etc.).
 	\item \textbf{Rational Processing} - thirdly, the character performs rational, cognitive processing by evaluating the event with respect to their goals, existing plans, and memory of previous events before making a final decision on how to react (action selection).
 	\item \textbf{Commit to Memory} - finally, the character commits the event, their response, and a record of the associated emotional state changes to memory so that they can use it to evaluate future events and recall the event when communicating with other characters.
 \end{enumerate}
@@ -305,7 +306,7 @@ Appraisal is the assessment of any given event in relation to a character's emot
 \subsection{Autobiographical Memory}
 \noindent The idea of the autobiographical memory module is to allow characters to engage in context-dependent recall of previous events that have occurred in the game. The concept was inspired by Dias et al.'s extension to the \textit{FAtiMA} architecture [21] but aims to utilise a different model [28] which was successfully tested using NPCs in \textit{Minecraft} and uses a  connectionist network model where the nodes are memories consisting of keywords, emotional valences, timestamps, and weights(importance). When engaging in conversation, characters can query each other's memory networks with keywords and provide a recount of related events.\\
 
-Because memories stored in this model hold emotional valences, characters can not only remember what event occured but also how they felt about it too. This makes the memory model useful for the appraisal of similar events (with matching keywords) and/or action selection: if the character remembers how their choices played out previously, it will help them make their current decision.
+Because memories stored in this model hold emotional valences, characters can not only remember what event occured, but also how they felt about it too. This makes the memory model useful for the appraisal of similar events (with matching keywords) and/or action selection: if the character remembers how their choices played out previously, it will help them make similar decisions.
 
 Finally, the memory model used also allows for multiple memory ``pools'' including immediate, short and long -term memory. ``This allows the system to differentiate between memories which were recently recalled (in the immediate memory pool) and memories which have not been recalled for a long time (in the long term memory pool).'' [28].
 
@@ -317,31 +318,31 @@ Finally, the memory model used also allows for multiple memory ``pools'' includi
 
 \subsection{Virtual Director}
 
-\noindent The virtual director is designed as a seperate agent that maintains general story-world knowledge about the plot structure. \textit{FearNot!} used a director-like agent called the story facilitator to set-up each episode and ensure it was coherent and relevant to previous events in the story. \textit{Virtual Storyteller} used a virtual director to perform global action control for individual agents in order to ensure their actions were in line with a ``good'' plot (removing full agent autonomy).
+\noindent The virtual director is designed as a seperate agent that maintains general story-world knowledge about the plot structure. \textit{FearNot!} used a director-like agent called the story facilitator to set-up each episode and ensure it was coherent and relevant to previous events in the story [3]. \textit{Virtual Storyteller} used a virtual director to perform global action control for individual agents in order to ensure their actions were in line with a ``good'' plot (removing full agent autonomy) [10].
 
-The goal of the virtual director in our system is uniform in that its purpose is to establish an interesting narrative. However, instead of global action control or behind-the-scenes episodic creation, it aims to generate appropriate ``global events'', \textbf{at run-time}, that challenge the player and other characters in the game. It is inspired heavily by RimWorld's ``AI Storyteller'' which works in a similar fashion.\\
+The goal of the virtual director in our system is uniform in that its purpose is to establish an interesting narrative. However, instead of global agent control or behind-the-scenes episodic creation, it aims to generate appropriate ``global events'', \textbf{at run-time}, that challenge the player and other characters in the game. It is inspired heavily by RimWorld's ``AI Storyteller'' which works in a similar fashion [17].\\
 
-The virtual director maintains story world state including the player and each character. It is able to query any character to retrieve information on their emotions, plans, memories etc., but is not able to perform action selection \textbf{for} characters because this would violate their full-autonomy. It uses this information to evaluate the coherency of the story and how interesting it is. After evaluation, the virtual director generates a ``global event'' to introduce to the story world which characters then react to accordingly.
+The virtual director maintains story world state including the player and each character. It is able to query any character to retrieve information on their emotions, plans, memories etc., but is not able to perform action selection for characters because this would violate their full-autonomy. It uses this information to evaluate the coherency of the story and how interesting it is. After evaluation, the virtual director generates a ``global event'' to introduce to the story world which characters then react to accordingly.
 
 \subsubsection{Potential for Genetic Algorithm}
 
-Genetic algorithms are a subset of evolutionary algorithms, and designed for metaheuristic population-based optimisation. It is reasonable to depict the set of possible global events that the virtual director can generate as a population. It is therefore evident that, included in that population, are one or more ``optimal'' events that will result in a more coherent and interesting story when chosen over the others. Therefore, the potential for implementing a genetic algorithm for use in the virtual director presents itself.\\
+\noindent Genetic algorithms are a subset of evolutionary algorithms and are designed for metaheuristic population-based optimisation. It is reasonable to depict the set of possible global events that the virtual director can generate as a population. It is therefore evident that, included in that population, are one or more ``optimal'' events that will result in a more coherent and interesting story when chosen over the others. Therefore, the potential for implementing a genetic algorithm for use in the virtual director presents itself.\\
 
-Genetic algorithms must involve a representation for candidate solutions. Typically this is a string of binary, integer  or real values where each bit represents a specific part of the solution (e.g. target character, when to start the global event, emotional valences, etc.). A population is then initialised using this representation. Members of the population are repeatedly selected (using a selection scheme such as tournament or roulette-wheel selection) and crossover and mutation is performed between candidate solutions to perturb them. After this process, the resulting population is evaluated and, if the desired criteria is met, a solution is chosen. If not, a replacement strategy is applied and the process repeats itself until a soluton is found.
+Genetic algorithms must involve a representation for candidate solutions. Typically this is a string of binary, integer  or real values where each bit represents a specific part of the solution (e.g. target character, when to start the global event, emotional valences, etc.). A population is then initialised using this representation. Members of the population are repeatedly selected (using a selection scheme such as tournament or roulette-wheel selection) and crossover and mutation is performed between candidate solutions to perturb them. After this process, the resulting population is evaluated and, if the desired criteria is met, a solution is chosen. If not, a replacement strategy is applied and the process repeats itself until a soluton is found \textbf{(Figure 7)}.
 
 \section{Implementation}
 \subsection{Unity}
 
 \noindent The prototype emergent narrative system will be implemented in the Unity game engine and written in C\#. Unity was chosen for several reasons:
 \begin{itemize}
-	\item \textbf{Free-to-Use} - Unity Personal edition is free-to-use and includes all the engine’s core features, enough to build the system.
-	\item \textbf{Ease-of-Use} - Unity is designed to be simple and easy to approach. Loading and using graphics, sound and other essential game components is very easy and is abstracted with Unity's simple GUI for the most part. This allows time spent on the project to be focused on the system's implementation.
+	\item \textbf{Free-to-Use} - Unity Personal edition is free-to-use and includes all the engine's core features, enough to build the system.
+	\item \textbf{Ease-of-Use} - Unity is designed to be simple and easy to approach. Loading and using graphics, sound and other essential game components is very easy and is abstracted with Unity's simple GUI for the most part. This allows time spent on the project to be focused on the system's implementation, not its presentation.
 	\item \textbf{GPU Programming} - Unity allows developers to write compute shaders: programs that run on the GPU, but outside of the normal graphics pipeline and allow algorithms to be massively parallelised. This is potentially useful for greatly improving the run-time of large calculations (such as running the genetic algorithm's fitness function across the search space).
 \end{itemize}
 
 \subsection{Prototype System}
 
-\noindent So far, the only implemented part of the prototype system is the emotonal personality model for each agent. Currently, emotions are represented by the OCC model [25] which is also used in the \textit{FearNot!} system [3]. Each character's emotional personality model is constructed in an XML file unique to that character and following a standard schema.\\
+\noindent So far, the only implemented part of the prototype system is the emotional personality model for each agent. Currently, emotions are represented by the OCC model [25] which is also used in the \textit{FearNot!} system [3]. Each character's emotional personality model is constructed in an XML file unique to that character and following a standard schema.\\
 
 Work has also begun on constructing the continuous planner, beginning with the creation of a XML schema for generic actions and each character's action library, though this is far from complete at this stage.
 
@@ -352,7 +353,7 @@ Work has also begun on constructing the continuous planner, beginning with the c
 \section{Project Progress}
 \subsection{Project Management}
 
-\noindent The Gantt chart \textbf{(Figure 7)} is from the initial proposal for this project. \textbf{Table 2} shows each task with different colours
+\noindent The Gantt chart \textbf{(Figure 8)} is from the initial proposal for this project. \textbf{Table 2} shows each task with different colours
 defining the amount of progress made toward them:
 \begin{itemize}
 	\item \color{red} \textbf{RED} \color{black} - not completed
@@ -369,16 +370,16 @@ The project is running slightly behind schedule, with 2 tasks partially complete
 
 \subsection{Contributions and Reflections}
 
-I believe the slight delay in project progress is a result of the learning process. Some of the more complex concepts in this project (modelling virtual intelligent agents and understanding how the multitude of existing systems worked) were difficult to grasp initially. 
+\noindent I believe the slight delay in project progress is a result of the learning process. Some of the more complex concepts in this project (modelling intelligent autonomous agents and understanding how the multitude of existing systems worked) were difficult to grasp initially. 
 
-I spent a long time researching existing systems and ensuring that I fully understood how they worked before I could write this report. Despite this issue, I believe I have managed my time well; the proposed criteria for creating successful systems \textbf{(Table 1)} is the output of extensive research into the field, and the high-level design for the new system promises several extensions to that research (namely the autobiographical memory module and the genetic algorithm approach for building the virtual director).\\
+I spent a long time researching existing systems and ensuring that I fully understood how they worked before I could write this report. Despite this issue, I believe I have managed my time well; the proposed criteria for creating successful systems \textbf{(Table 1)} is the output of extensive research into the field and the high-level design for the new system promises several extensions to that research (namely the autobiographical memory module and the genetic algorithm approach for building the virtual director).\\
 
 At this time, I believe all the project objectives can be completed on time and I am looking forward to implementing the system design specified in this document and conducting user testing. I believe the most novel part of the project is the virtual director. Genetic algorithms are not prolific in the field of interactive storytelling and it will be interesting to discover how suitable they are for generating effective narratives. My initial task schedule will not be changed at this time. The upcoming Christmas break will give me plenty of time to further implement the prototype and hopefully the system will be near finished and ready for user-testing by the new year.
 
 \begin{figure}[t]
 \centering
 \includegraphics[scale=0.33]{Images/gantt.png}
-\caption{Gantt chart}
+\caption{Gantt chart from the project proposal}
 \label{fig:Gantt}
 \end{figure}
 
@@ -479,43 +480,43 @@ Dias, J., \& Paiva, A. (2005).
 
 \bibitem{FAtiMA with Memory}
 Dias, J., W. C. Ho., Vogt, T., Beeckman, N., Paiva1, A., \& Andre, E. (2007).
-"I Know What I Did Last Summer: Autobiographic Memory in Synthetic Characters".
+``I Know What I Did Last Summer: Autobiographic Memory in Synthetic Characters''.
 \textit{Affective Computing and Intelligent Interaction: Second International Conference, ACII 2007 Lisbon, Portugal, September 12-14, 2007 Proceedings} pp.606-617
 
 \bibitem{Autobiographical Memory}
 Ho, W.C. \& Watson, S. (2006).
-"Autobiographic Knowledge for Believable Virtual Characters".
+``Autobiographic Knowledge for Believable Virtual Characters''.
 \textit{In: Proceedings of the 6th International Conference on Intelligent Virtual Agents (IVA 2006)} pp.383-394
 
 \bibitem{Virtual Theatre}
 Hayes-Roth, B., Brownston, L., \& Sincoff, E. (1995).
-"Directed Improvisation by Computer Characters".
+``Directed Improvisation by Computer Characters''.
 \textit{Technical Report KSL 95-04, Knowledge Systems Laboratory, Stanford University, 1995}
 
 \bibitem{Improv System}
 Perlin, K., \& Goldberg, A. (1996).
-"Improv: A System for Scripting Interactive Actors in Virtual Worlds".
+``Improv: A System for Scripting Interactive Actors in Virtual Worlds''.
 \textit{In: Proceedings of the 23rd Annual Conference on Computer Graphics and Interactive Techniques (SIGGRAPH '96)} pp.205-216
 
 \bibitem{OCC Model}
 Ortony, A., Clore, G.L., \& Collins, A. (1988).
-"The Cognitive Structure of Emotions"
+``The Cognitive Structure of Emotions''.
 \textit{New York, NY, US: Cambridge University Press}
 
 \bibitem{OCEAN Model}
 Saucier, G., \& Goldberg, L.R. (1996).
-"The Language of Personality: Lexical Perspectives on the Five-Factor Model".
+``The Language of Personality: Lexical Perspectives on the Five-Factor Model''.
 \textit{In: The Five-Factor Model of Personality:
 Theoretical Perspectives} pp.21-50
 
 \bibitem{ERiSA}
 Chowanda, A., Blanchfield, P., Flintham, M., \& Valstar, M. (2014). 
-"ERISA: Building Emotional Realistic Social Game Agent-Companions"
+``ERISA: Building Emotional Realistic Social Game Agent-Companions'''.
 \textit{In: Proceedings of the 14th International Conference on Intelligent Virtual Agents (IVA 2014)} pp.134-143 
 
 \bibitem{Autobiographical Memory Minecraft}
 Kope, A., Rose, C., \& Katchabaw, K. (2013).
-"Modeling Autobiographical Memory for Believable Agents".
+``Modeling Autobiographical Memory for Believable Agents''.
 \textit{In: Proceedings of the Ninth AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment} pp.23-29
 
 
